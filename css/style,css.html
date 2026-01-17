@@ -1,0 +1,125 @@
+:root {
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-main: #2d3748;
+    --text-muted: #718096;
+    --border-color: #e2e8f0;
+    
+    /* Requested Suit Colors */
+    --suit-spade: #1a73e8; /* Blue */
+    --suit-heart: #e53e3e; /* Red */
+    --suit-diam: #dd6b20;  /* Orange */
+    --suit-club: #2f855a;  /* Green */
+    
+    --header-accent: #4a5568; 
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Suit Styling */
+.suit-s { color: var(--suit-spade); font-weight: bold; }
+.suit-h { color: var(--suit-heart); font-weight: bold; }
+.suit-d { color: var(--suit-diam); font-weight: bold; }
+.suit-c { color: var(--suit-club); font-weight: bold; }
+
+/* Details/Summary Blocks */
+details {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+summary {
+    padding: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #fff;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+summary:hover {
+    background-color: #f7fafc;
+}
+
+.content {
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Badge Blocks */
+.badge-block {
+    display: inline-block;
+    background: #edf2f7;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: calc(33% - 25px);
+    vertical-align: top;
+}
+
+.badge-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.badge-desc {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Tables */
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+th {
+    text-align: left;
+    padding: 8px 12px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--border-color);
+}
+
+td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: top;
+}
+
+.subheader-bar {
+    background-color: #e2e8f0;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-top: 20px;
+    border-radius: 4px;
+    color: var(--text-main);
+}
