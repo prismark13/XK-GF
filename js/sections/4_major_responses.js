@@ -265,6 +265,71 @@ export const majorResponses = `
                 </tbody>
             </table>
         </div>
+
+        <div class="subheader-bar">Passed Hand Responses (Reverse Drury)</div>
+        <div class="table-wrapper">
+             <table style="border-collapse: collapse; width: 100%;">
+                <thead>
+                    <tr style="background-color: #e0f2fe; border-bottom: 2px solid #e2e8f0;">
+                        <th colspan="3" style="padding: 8px 14px; text-align: left; color: #0369a1; font-weight: 700;">
+                            Applies over: P (P) 1M (P)  OR  P (P) 1M (X)<br>
+                            <span style="font-weight:normal; font-size:0.9em; color:#555;">(Off if overcaller bids a suit)</span>
+                        </th>
+                    </tr>
+                    <tr style="background-color: #f8fafc; border-bottom: 2px solid #e2e8f0;">
+                        <th style="width: 15%; padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Bid</th>
+                        <th style="width: 25%; padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Meaning</th>
+                        <th style="padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">2<span class="suit-c">♣</span></td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Reverse Drury</strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Good 8+ HCP.</strong> 3+ Trumps.<br>
+                            
+                            <table class="nested-table" style="width: 100%; margin-top: 8px;">
+                                <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">Opener Rebid:</td></tr>
+                                
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">2<span class="suit-d">♦</span></td>
+                                    <td class="nested-val">
+                                        <strong>Solid Opener.</strong> No Slam Interest.<br>
+                                        <span style="font-size:0.9em; color:#555;">Responder Rebid:</span><br>
+                                        &bull; 2M = Weak Raise.<br>
+                                        &bull; Other = Limit Raise+, Game Try.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">2M</td>
+                                    <td class="nested-val"><strong>Minimum / Sub-minimum.</strong> Sign-off.</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">> 2M</td>
+                                    <td class="nested-val"><strong>Slam Try.</strong> (Except 4M = To Play).</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">2M</td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Weak Raise</strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>4 - 7 (bad 8) HCP.</strong> 3-4 pieces.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </div>
 </details>
 `;
