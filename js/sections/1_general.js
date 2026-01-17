@@ -100,6 +100,68 @@ export const generalAgreements = `
             </table>
         </div>
 
+        <div class="subheader-bar">Rosenberg Rules to Responding</div>
+        <div style="background-color: #fff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 15px;">
+            <ol style="margin: 0; padding-left: 20px; line-height: 1.6; color: #334155;">
+                [cite_start]<li style="margin-bottom: 4px;">Respond with an <strong>Ace</strong>[cite: 331].</li>
+                [cite_start]<li style="margin-bottom: 4px;">Respond with a <strong>5-card Major</strong> biddable at the 1-level[cite: 332].</li>
+                [cite_start]<li style="margin-bottom: 4px;">Respond with a <strong>6+ card Heart suit</strong>[cite: 333].</li>
+                [cite_start]<li style="margin-bottom: 4px;">Respond in <strong>3rd seat</strong> with any <strong>Void</strong> if partner opens 1M[cite: 334].</li>
+                [cite_start]<li style="margin-bottom: 4px;">Respond with <strong>4-card support</strong> of partner’s major[cite: 335].</li>
+                [cite_start]<li style="margin-bottom: 4px;">Respond with <strong>3-card support</strong> of partner’s major <strong>Non-Vul</strong>[cite: 336].</li>
+                [cite_start]<li style="margin-bottom: 4px;">Respond with <strong>0-1 Diamond</strong> to partner’s <strong>Vul 1<span class="suit-d">♦</span></strong>[cite: 337].</li>
+                [cite_start]<li style="margin-bottom: 4px;">Respond with <strong>0-1 Club</strong> to partner’s <strong>1<span class="suit-c">♣</span></strong>[cite: 338].</li>
+                [cite_start]<li style="margin-bottom: 4px;">Respond with <strong>Doubleton Club</strong> to partner’s <strong>1<span class="suit-c">♣</span> Vul</strong>[cite: 339].</li>
+                [cite_start]<li>Respond to partner’s <strong>1<span class="suit-c">♣</span> Non-Vul</strong> if I think they have game[cite: 340].</li>
+            </ol>
+        </div>
+
+        <div class="subheader-bar">Reverses</div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 25%">Situation</th>
+                        <th style="width: 35%">Action</th>
+                        <th>Meaning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Resp Rebid Major</strong></td>
+                        <td><strong>2-Level Bid</strong></td>
+                        <td>5+ Cards. 1-Round Force. Could be weak.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Resp Raise Opener</strong></td>
+                        <td><strong>Direct Raise</strong></td>
+                        <td><strong>Game Force.</strong> Gives up on Resp's suit.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Weakness Signal</strong></td>
+                        <td><strong>Cheaper of 4th Suit / 2NT</strong></td>
+                        <td><strong>Artificial Weakness.</strong> Opener bids naturally.<br>Resp rebid of own suit next = 1RF.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Opener Rebid</strong></td>
+                        <td><strong>> 3 of 1st Suit</strong></td>
+                        <td>Forces Game.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Example</strong></td>
+                        <td colspan="2">
+                            <strong>1<span class="suit-h">♥</span> - 1NT - 2<span class="suit-s">♠</span> - ?</strong>
+                            <div style="margin-top:6px; font-size:0.9em; padding-left:10px; border-left:3px solid #cbd5e1;">
+                                <strong>3<span class="suit-h">♥</span>:</strong> 3-card Limit Raise.<br>
+                                <strong>3<span class="suit-s">♠</span>:</strong> 3-card Concentration.<br>
+                                <strong>4<span class="suit-h">♥</span>:</strong> Fast Arrival (Sub-constructive Single Raise).
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <div class="subheader-bar">Doubles</div>
         <div class="table-wrapper">
             <table>
