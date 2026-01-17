@@ -5,14 +5,13 @@
 // If you haven't created a file yet, comment out the import line with //
 import { generalAgreements } from './sections/1_general.js';
 import { structure1NT }     from './sections/2_1nt_structure.js'; 
-// import { structure2NT }     from './sections/3_2nt_structure.js';
-// import { clubOpening }      from './sections/2_club_opening.js';
-// import { majorResponses }   from './sections/3_major_responses.js';
-// import { minorResponses }   from './sections/4_minor_responses.js';
-// import { weakOpenings }     from './sections/5_weak_openings.js';
-
+import { structure2NT }     from './sections/3_2nt_structure.js';
+import { majorResponses }   from './sections/4_major_responses.js';
+import { minorResponses }   from './sections/5_minor_responses.js';
+import { clubOpening }      from './sections/6_club_opening.js';
+import { weakOpenings }     from './sections/7_weak_openings.js';
 import { defensiveBidding } from './sections/8_defensive_bidding.js';
-// import { competitiveBidding } from './sections/9_competitive_bidding.js';
+import { competitiveBidding } from './sections/9_competitive_bidding.js';
 import { carding }          from './sections/10_carding.js';
 
 console.log('Bridge System App Loaded');
@@ -25,14 +24,14 @@ if (contentDiv) {
     // (Ensure you only include variables you have actually imported above)
     const sections = [
         generalAgreements,
-        // clubOpening,
-        // majorResponses,
-        // minorResponses,
-        // weakOpenings,
         structure1NT,
-        // structure2NT,
+        structure2NT,
+        majorResponses,
+        minorResponses,
+        clubOpening,
+        weakOpenings,
         defensiveBidding,
-        // competitiveBidding,
+        competitiveBidding,
         carding
     ];
 
