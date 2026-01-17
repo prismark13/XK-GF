@@ -20,9 +20,15 @@ export const structure1NT = `
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                             <table class="nested-table" style="width: 100%;">
-                                <tr><td class="nested-key">2<span class="suit-d">♦</span></td><td class="nested-val"><strong>No Major.</strong></td></tr>
+                                <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">Opener Rebid:</td></tr>
                                 <tr><td class="nested-key">2M</td><td class="nested-val"><strong>4-card Major.</strong></td></tr>
-                                <tr><td class="nested-key">3M</td><td class="nested-val"><strong>Smolen.</strong> (After 2<span class="suit-d">♦</span>). 5oM + 4M, GF.</td></tr>
+                                <tr><td class="nested-key">2<span class="suit-d">♦</span></td><td class="nested-val"><strong>No Major.</strong> (Responder's follow-ups below):</td></tr>
+                                
+                                <tr style="background-color:#f1f5f9;"><td colspan="2" style="font-weight:700; color:#475569; padding-top:6px; padding-bottom:4px;">Over 2<span class="suit-d">♦</span>:</td></tr>
+                                <tr><td class="nested-key">2<span class="suit-h">♥</span></td><td class="nested-val"><strong>Garbage.</strong> Weak, short <span class="suit-d">♦</span>. (Drop dead).</td></tr>
+                                <tr><td class="nested-key">2NT</td><td class="nested-val"><strong>Invitational.</strong></td></tr>
+                                <tr><td class="nested-key">3m</td><td class="nested-val"><strong>Natural.</strong> Game Forcing.</td></tr>
+                                <tr><td class="nested-key">3M</td><td class="nested-val"><strong>Smolen.</strong> 5oM + 4M. Game Forcing.</td></tr>
                             </table>
                         </td>
                     </tr>
@@ -34,8 +40,17 @@ export const structure1NT = `
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                             <table class="nested-table" style="width: 100%;">
+                                <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">Opener Rebid:</td></tr>
                                 <tr><td class="nested-key">2<span class="suit-h">♥</span></td><td class="nested-val"><strong>Accept.</strong> Min or Max (no fit).</td></tr>
                                 <tr><td class="nested-key">3<span class="suit-h">♥</span></td><td class="nested-val"><strong>Super Accept.</strong> Max + 4-card fit.</td></tr>
+                                
+                                <tr style="background-color:#f1f5f9;"><td colspan="2" style="font-weight:700; color:#475569; padding-top:6px; padding-bottom:4px;">Over 2<span class="suit-h">♥</span>:</td></tr>
+                                <tr><td class="nested-key">2<span class="suit-s">♠</span></td><td class="nested-val"><strong>5+<span class="suit-s">♠</span> 5+<span class="suit-h">♥</span>.</strong> Force 1 round (Inv+).</td></tr>
+                                <tr><td class="nested-key">2NT</td><td class="nested-val"><strong>Invitational.</strong> Balanced.</td></tr>
+                                <tr><td class="nested-key">3m</td><td class="nested-val"><strong>Natural.</strong> Game Forcing.</td></tr>
+                                <tr><td class="nested-key">3<span class="suit-h">♥</span></td><td class="nested-val"><strong>Invitational.</strong> 6+ Hearts.</td></tr>
+                                <tr><td class="nested-key">3<span class="suit-s">♠</span></td><td class="nested-val"><strong>Splinter.</strong> Singleton Spades, GF.</td></tr>
+                                <tr><td class="nested-key">4m</td><td class="nested-val"><strong>Splinter.</strong> Singleton Minor, GF.</td></tr>
                             </table>
                         </td>
                     </tr>
