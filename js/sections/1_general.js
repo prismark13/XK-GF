@@ -35,7 +35,7 @@ export const generalAgreements = `
             </div>
         </div>
 
-        <div class="subheader-bar">Leads & Signals</div>
+        <div class="subheader-bar">Leads</div>
         <div class="table-wrapper">
             <table>
                 <thead>
@@ -46,11 +46,6 @@ export const generalAgreements = `
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td><strong>Carding</strong></td>
-                        <td><strong>UDCA</strong></td>
-                        <td>Upside-Down Count & Attitude.</td>
-                    </tr>
                     <tr>
                         <td><strong>Leads vs Suits</strong></td>
                         <td><strong>3rd / Low</strong></td>
@@ -76,11 +71,6 @@ export const generalAgreements = `
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td><strong>1NT Range</strong></td>
-                        <td><strong>15 - 17 HCP</strong></td>
-                        <td>Can have 5-card Major.</td>
-                    </tr>
                     <tr>
                         <td><strong>2NT Range</strong></td>
                         <td><strong>20 - 21 HCP</strong></td>
