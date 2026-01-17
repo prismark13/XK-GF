@@ -284,6 +284,45 @@ export const minorResponses = `
             </table>
         </div>
 
+        <div class="subheader-bar">Opener Rebid 2NT (1x - 1y - 2NT)</div>
+        <div class="table-wrapper">
+             <table style="border-collapse: collapse; width: 100%;">
+                <tbody>
+                    <tr style="background-color: #e0f2fe; border-bottom: 2px solid #e2e8f0;">
+                        <td colspan="3" style="padding: 8px 14px; color: #0369a1; font-weight: 700;">
+                            18-19 HCP (Balanced)
+                        </td>
+                    </tr>
+                    
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="width:15%; background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">All Suits</td>
+                        <td style="width:25%; padding: 14px; vertical-align: top;">
+                            <strong>Transfers</strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            Responder bids transfer to next higher suit.<br>
+                            &bull; Opener <strong>must accept</strong> to <span class="suit-d">♦</span> and Resp's suit (sign-off).<br>
+                            &bull; Transfer to <strong>New Suit</strong> = GF.
+                        </td>
+                    </tr>
+
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">
+                            1<span class="suit-d">♦</span> - 1N - 2N
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Exceptions</strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            &bull; <strong>3<span class="suit-c">♣</span>:</strong> To Play.<br>
+                            &bull; <strong>3<span class="suit-d">♦</span>:</strong> To Play.<br>
+                            &bull; <strong>3M:</strong> Fragment (Short in oM).
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <div style="margin-top: 20px; border-left: 4px solid #8b5cf6; background-color: #f5f3ff; padding: 15px; border-radius: 4px;">
             <div style="font-weight: 700; color: #6d28d9; margin-bottom: 8px;">SPIRAL CONVENTION</div>
             <div style="margin-bottom: 10px; color: #4b5563;">
