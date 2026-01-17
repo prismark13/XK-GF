@@ -34,14 +34,18 @@ export const structure2NT = `
                                     <td class="nested-val"><strong>4+ Spades.</strong></td>
                                 </tr>
 
-                                <tr style="background-color:#f1f5f9;"><td colspan="2" style="font-weight:700; color:#475569; padding-top:6px; padding-bottom:4px;">Responder over 3<span class="suit-d">♦</span> (Smolen):</td></tr>
+                                <tr style="background-color:#f1f5f9;"><td colspan="2" style="font-weight:700; color:#475569; padding-top:6px; padding-bottom:4px;">Responder over 3<span class="suit-d">♦</span>:</td></tr>
                                 <tr>
                                     <td class="nested-key" style="width:55px;">3<span class="suit-h">♥</span></td>
-                                    <td class="nested-val"><strong>5<span class="suit-s">♠</span> + 4<span class="suit-h">♥</span>.</strong></td>
+                                    <td class="nested-val"><strong>4-5 Hearts.</strong><br>&rarr; Opener 3<span class="suit-s">♠</span> agrees <span class="suit-h">♥</span>.</td>
                                 </tr>
                                 <tr>
                                     <td class="nested-key" style="width:55px;">3<span class="suit-s">♠</span></td>
-                                    <td class="nested-val"><strong>5<span class="suit-h">♥</span> + 4<span class="suit-s">♠</span>.</strong></td>
+                                    <td class="nested-val"><strong>4-5 Spades.</strong><br>&rarr; Opener 4<span class="suit-h">♥</span> agrees <span class="suit-s">♠</span>.</td>
+                                </tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">4<span class="suit-d">♦</span></td>
+                                    <td class="nested-val"><strong>5<span class="suit-h">♥</span> + 5<span class="suit-s">♠</span>.</strong> Slam Try.</td>
                                 </tr>
                             </table>
                         </td>
@@ -77,56 +81,66 @@ export const structure2NT = `
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">3<span class="suit-s">♠</span></td>
                         <td style="padding: 14px; vertical-align: top;">
                             <strong>Relay to 3NT</strong><br>
-                            For Minor Slam Tries.
+                            For Minor Suits.
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                             <table class="nested-table" style="width: 100%;">
-                                <tr><td class="nested-key" style="width:55px;">3NT</td><td class="nested-val"><strong>Forced.</strong></td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3NT</td><td class="nested-val"><strong>Forced.</strong> (Responder follows:)</td></tr>
+                                <tr style="background-color:#f1f5f9;"><td colspan="2" style="font-weight:700; color:#475569; padding-top:6px; padding-bottom:4px;">Responder over 3NT:</td></tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">Pass</td>
+                                    <td class="nested-val"><strong>To Play.</strong></td>
+                                </tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">4<span class="suit-c">♣</span></td>
+                                    <td class="nested-val"><strong>Clubs.</strong> One-Suiter (GF).</td>
+                                </tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">4<span class="suit-d">♦</span></td>
+                                    <td class="nested-val"><strong>Diamonds.</strong> One-Suiter (GF).</td>
+                                </tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">4<span class="suit-h">♥</span></td>
+                                    <td class="nested-val"><strong>Minors (5-5+).</strong> Short <span class="suit-h">♥</span> (0-1).</td>
+                                </tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">4<span class="suit-s">♠</span></td>
+                                    <td class="nested-val"><strong>Minors (5-5+).</strong> Short <span class="suit-s">♠</span> (0-1).</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">4<span class="suit-c">♣</span></td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Gerber</strong><br>
+                            Ace Asking.
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                             <table class="nested-table" style="width: 100%;">
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">4<span class="suit-d">♦</span></td><td class="nested-val" style="padding-right:15px;"><strong>0 or 4 Aces.</strong></td>
+                                    <td class="nested-key" style="width:55px;">4<span class="suit-h">♥</span></td><td class="nested-val"><strong>1 Ace.</strong></td>
+                                </tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">4<span class="suit-s">♠</span></td><td class="nested-val" style="padding-right:15px;"><strong>2 Aces.</strong></td>
+                                    <td class="nested-key" style="width:55px;">4NT</td><td class="nested-val"><strong>3 Aces.</strong></td>
+                                </tr>
                             </table>
                         </td>
                     </tr>
                     
                     <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">4<span class="suit-c">♣</span></td>
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; vertical-align: top;"><span class="suit-d">4♦</span> / <span class="suit-h">4♥</span></td>
                         <td style="padding: 14px; vertical-align: top;">
-                            <strong>Club One-Suiter</strong><br>
-                            Game Forcing.
+                            <strong>Texas Transfer</strong><br>
+                            Transfer to <span class="suit-h">♥</span> / <span class="suit-s">♠</span>.
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                             Natural.
-                        </td>
-                    </tr>
-
-                    <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #d97706; padding: 14px; vertical-align: top;"><span class="suit-d">4♦</span></td>
-                        <td style="padding: 14px; vertical-align: top;">
-                            <strong>Diamond One-Suiter</strong><br>
-                            Game Forcing.
-                        </td>
-                        <td style="padding: 14px; vertical-align: top;">
-                             Natural.
-                        </td>
-                    </tr>
-
-                    <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; vertical-align: top;"><span class="suit-h">4♥</span></td>
-                        <td style="padding: 14px; vertical-align: top;">
-                            <strong>Minors 5-5+</strong><br>
-                            Shortness in <span class="suit-h">Hearts</span> (0-1).
-                        </td>
-                        <td style="padding: 14px; vertical-align: top;">
-                             Game Forcing.
-                        </td>
-                    </tr>
-
-                    <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">4<span class="suit-s">♠</span></td>
-                        <td style="padding: 14px; vertical-align: top;">
-                            <strong>Minors 5-5+</strong><br>
-                            Shortness in <span class="suit-s">Spades</span> (0-1).
-                        </td>
-                        <td style="padding: 14px; vertical-align: top;">
-                             Game Forcing.
+                             <table class="nested-table" style="width: 100%;">
+                                <tr><td class="nested-key" style="width:55px;">Step</td><td class="nested-val"><strong>Sign Off.</strong> No Slam Interest.</td></tr>
+                            </table>
                         </td>
                     </tr>
                     
