@@ -16,28 +16,28 @@ export const weakBids = `
                     <tr style="border-bottom: 1px solid #e2e8f0;">
                         <td class="col-resp" style="font-weight: 700; color: #d97706; padding: 12px;">UPH Jump Shifts</td>
                         <td style="padding: 12px;">
-                            [cite_start]<strong>2-Level:</strong> Weak[cite: 247].<br>
-                            [cite_start]<strong>3-Level:</strong> Invitational[cite: 247].
+                            <strong>2-Level:</strong> Weak.<br>
+                            <strong>3-Level:</strong> Invitational.
                         </td>
                     </tr>
                     <tr style="border-bottom: 1px solid #e2e8f0;">
                         <td class="col-resp" style="font-weight: 700; color: #0369a1; padding: 12px;">Advancer (Comp)</td>
                         <td style="padding: 12px;">
-                            [cite_start]<strong>Jump Shift:</strong> Fit-Showing (Inv+, 4+ supp, good 5+ suit)[cite: 539].
+                            <strong>Jump Shift:</strong> Fit-Showing (Inv+, 4+ supp, good 5+ suit).
                         </td>
                     </tr>
                     <tr style="border-bottom: 1px solid #e2e8f0;">
                         <td class="col-resp" style="font-weight: 700; color: #0369a1; padding: 12px;">Responses to 1M</td>
                         <td style="padding: 12px;">
-                            [cite_start]<strong>2<span class="suit-s">♠</span> (over 1<span class="suit-h">♥</span>):</strong> Weak (0-5 HCP, 6+<span class="suit-s">♠</span>)[cite: 188].<br>
-                            [cite_start]<strong>4M:</strong> Preemptive[cite: 197, 215].
+                            <strong>2<span class="suit-s">♠</span> (over 1<span class="suit-h">♥</span>):</strong> Weak (0-5 HCP, 6+<span class="suit-s">♠</span>).<br>
+                            <strong>4M:</strong> Preemptive.
                         </td>
                     </tr>
                     <tr>
                         <td class="col-resp" style="font-weight: 700; color: #0369a1; padding: 12px;">Responses to 1m</td>
                         <td style="padding: 12px;">
-                            [cite_start]<strong>2<span class="suit-d">♦</span> (over 1<span class="suit-c">♣</span>):</strong> Weak[cite: 276].<br>
-                            [cite_start]<strong>2<span class="suit-h">♥</span>/<span class="suit-s">♠</span> (over 1<span class="suit-c">♣</span>):</strong> Weak (0-5 HCP, 6+ suit)[cite: 277, 278].
+                            <strong>2<span class="suit-d">♦</span> (over 1<span class="suit-c">♣</span>):</strong> Weak.<br>
+                            <strong>2<span class="suit-h">♥</span>/<span class="suit-s">♠</span> (over 1<span class="suit-c">♣</span>):</strong> Weak (0-5 HCP, 6+ suit).
                         </td>
                     </tr>
                 </tbody>
