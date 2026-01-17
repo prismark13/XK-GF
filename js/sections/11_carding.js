@@ -1,45 +1,47 @@
 export const carding = `
 <details>
-    <summary><span>Carding & Leads</span></summary>
+    <summary><span>Leads & Signals</span></summary>
     <div class="content">
-        <div class="badge-block">
-            <div class="badge-label">Signals</div>
-            [cite_start]<div class="badge-desc"><strong>UDCA</strong> (Upside Down Count & Attitude)[cite: 569].</div>
-        </div>
-        <div class="badge-block">
-            <div class="badge-label">Suit Pref</div>
-            [cite_start]<div class="badge-desc">Given when declarer draws trumps[cite: 573].</div>
-        </div>
-
-        <div class="subheader-bar">Opening Leads</div>
+        
+        <div class="subheader-bar">Leads & Signals</div>
         <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th class="col-resp">Contract</th>
-                        <th class="col-meaning">Method</th>
-                        <th class="col-cont">Specifics</th>
-                    </tr>
-                </thead>
+            <table style="border-collapse: collapse; width: 100%;">
                 <tbody>
-                    <tr>
-                        <td class="col-resp">Vs NT</td>
-                        <td><strong>4th Best</strong></td>
-                        [cite_start]<td>4th best from suits we like[cite: 570].</td>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td class="col-resp" style="width: 30%; font-weight: 700; color: #0369a1; padding: 12px;">General Method</td>
+                        <td style="padding: 12px;">
+                            [cite_start]<strong>UDCA</strong> (Upside-Down Count & Attitude)[cite: 569].
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td class="col-resp" style="font-weight: 700; color: #0369a1; padding: 12px;">Leads vs NT</td>
+                        <td style="padding: 12px;">
+                            [cite_start]<strong>4th Best</strong> from suits we like[cite: 570].
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td class="col-resp" style="font-weight: 700; color: #0369a1; padding: 12px;">Leads vs Suits</td>
+                        <td style="padding: 12px;">
+                            [cite_start]<strong>3rd / Low:</strong> 3rd from Even, Low from Odd[cite: 571].
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td class="col-resp" style="font-weight: 700; color: #b91c1c; padding: 12px;">Special Signals</td>
+                        <td style="padding: 12px;">
+                            &bull; [cite_start]<strong>Low Lead Special:</strong> If dummy has Qx+ and cannot be beaten, signal attitude for J (or "Royal" if dummy has K/A)[cite: 572].<br>
+                            &bull; [cite_start]<strong>Trump Suit:</strong> Suit Preference when declarer draws trumps (Up the line = Lower suit)[cite: 573].
+                        </td>
                     </tr>
                     <tr>
-                        <td class="col-resp">Vs Suit</td>
-                        <td><strong>3rd / Low</strong></td>
-                        [cite_start]<td>3rd from Even number of cards.<br>Low from Odd number of cards[cite: 571].</td>
-                    </tr>
-                    <tr>
-                        <td class="col-resp">Honors</td>
-                        <td><strong>Standard</strong></td>
-                        <td>Ace from AK (Attitude). King from KQ (Count/Unblock).</td>
+                        <td class="col-resp" style="font-weight: 700; color: #0369a1; padding: 12px;">Discards</td>
+                        <td style="padding: 12px;">
+                            (Attitude implied by "Upside down count & attitude" general note).
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </div>
+
     </div>
 </details>
 `;
