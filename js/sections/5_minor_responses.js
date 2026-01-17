@@ -144,7 +144,6 @@ export const minorResponses = `
                             <strong>1<span class="suit-c">♣</span> &rarr; 2<span class="suit-d">♦</span>:</strong> Weak.
                         </td>
                     </tr>
-
                     <tr style="border-bottom: 2px solid #e2e8f0;">
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; vertical-align: top;">
                             2<span class="suit-h">♥</span> / 2<span class="suit-s">♠</span>
@@ -156,7 +155,6 @@ export const minorResponses = `
                             <strong>0 - 5 HCP.</strong> 6+ Cards.
                         </td>
                     </tr>
-
                     <tr style="border-bottom: 2px solid #e2e8f0;">
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">3m</td>
                         <td style="padding: 14px; vertical-align: top;">
@@ -166,7 +164,6 @@ export const minorResponses = `
                             <strong>5 - 8 HCP.</strong> 5+ card support.
                         </td>
                     </tr>
-
                     <tr style="border-bottom: 2px solid #e2e8f0;">
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">3om</td>
                         <td style="padding: 14px; vertical-align: top;">
@@ -177,7 +174,6 @@ export const minorResponses = `
                             <strong>1<span class="suit-c">♣</span> &rarr; 3<span class="suit-d">♦</span>:</strong> N/A (or Splinter).
                         </td>
                     </tr>
-
                     <tr style="border-bottom: 2px solid #e2e8f0;">
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #d97706; padding: 14px; vertical-align: top;">3M</td>
                         <td style="padding: 14px; vertical-align: top;">
@@ -185,6 +181,103 @@ export const minorResponses = `
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                             Singleton/Void.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="subheader-bar">Special Sequences</div>
+        <div class="table-wrapper">
+             <table style="border-collapse: collapse; width: 100%;">
+                <tbody>
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="width: 35%; background-color: #f1f5f9; font-weight: 700; color: #334155; padding: 14px; vertical-align: top;">
+                             1<span class="suit-c">♣</span> - 1M; 2<span class="suit-c">♣</span> - 2<span class="suit-d">♦</span>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Artificial Game Force.</strong>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #334155; padding: 14px; vertical-align: top;">
+                             1<span class="suit-d">♦</span> - 1<span class="suit-s">♠</span>; 2<span class="suit-d">♦</span> - 2<span class="suit-h">♥</span>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Artificial Game Force.</strong>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #334155; padding: 14px; vertical-align: top;">
+                             1<span class="suit-c">♣</span> - 1<span class="suit-s">♠</span>; 2<span class="suit-c">♣</span> - 2<span class="suit-h">♥</span>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Weak.</strong> 5<span class="suit-s">♠</span> + 4+<span class="suit-h">♥</span>.
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #334155; padding: 14px; vertical-align: top;">
+                             1<span class="suit-d">♦</span> - 1<span class="suit-h">♥</span>; 2<span class="suit-d">♦</span> - 2<span class="suit-s">♠</span>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Artificial Game Force.</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="subheader-bar">Checkback (1m - 1M - 1NT)</div>
+        <div class="table-wrapper">
+             <table style="border-collapse: collapse; width: 100%;">
+                <tbody>
+                    <tr style="background-color: #e0f2fe; border-bottom: 2px solid #e2e8f0;">
+                        <td colspan="3" style="padding: 8px 14px; color: #0369a1; font-weight: 700;">
+                            Start: 1m &rarr; 1M &rarr; 1NT
+                        </td>
+                    </tr>
+                    
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="width:15%; background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">2<span class="suit-c">♣</span></td>
+                        <td style="width:25%; padding: 14px; vertical-align: top;">
+                            <strong>Forces 2<span class="suit-d">♦</span></strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            Used for <strong>Weak</strong> (sign-off) or <strong>Invitational</strong> hands.<br>
+                            <strong>Continuations (after forced 2<span class="suit-d">♦</span>):</strong>
+                            <div style="margin-top:6px; font-size:0.9em;">
+                                &bull; <strong>Pass:</strong> Weak with <span class="suit-d">♦</span>.<br>
+                                &bull; <strong>2M:</strong> Invitational (5+M). (Op 2N=Max).<br>
+                                &bull; <strong>2oM:</strong> 4-5 Inv (if 1<span class="suit-h">♥</span>-1N-2<span class="suit-c">♣</span>-2<span class="suit-d">♦</span>-2<span class="suit-s">♠</span>).<br>
+                                &bull; <strong>3<span class="suit-c">♣</span>:</strong> Weak with <span class="suit-c">♣</span>.<br>
+                                &bull; <strong>3<span class="suit-d">♦</span>:</strong> Inv with <span class="suit-d">♦</span>.<br>
+                                &bull; <strong>3M:</strong> Strongly Inv (6+M).
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #d97706; padding: 14px; vertical-align: top;">2<span class="suit-d">♦</span></td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Game Force</strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Checkback.</strong><br>
+                            Opener shows 3-card support for M first.
+                        </td>
+                    </tr>
+
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #334155; padding: 14px; vertical-align: top;">
+                            Other
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Specifics</strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            &bull; <strong>1m-1<span class="suit-h">♥</span>-1N-2<span class="suit-s">♠</span>:</strong> 4<span class="suit-s">♠</span>-4<span class="suit-h">♥</span> Inv.<br>
+                            &bull; <strong>1m-1<span class="suit-s">♠</span>-1N-2<span class="suit-h">♥</span>:</strong> 5<span class="suit-s">♠</span>-4<span class="suit-h">♥</span> (Pass or Correct).<br>
+                            &bull; <strong>Jump to 3X:</strong> Slam Try (UPH).
                         </td>
                     </tr>
                 </tbody>
