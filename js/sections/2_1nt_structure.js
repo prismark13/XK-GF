@@ -21,14 +21,14 @@ export const structure1NT = `
                         <td style="padding: 14px; vertical-align: top;">
                             <table class="nested-table" style="width: 100%;">
                                 <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">Opener Rebid:</td></tr>
-                                <tr><td class="nested-key">2M</td><td class="nested-val"><strong>4-card Major.</strong></td></tr>
-                                <tr><td class="nested-key">2<span class="suit-d">♦</span></td><td class="nested-val"><strong>No Major.</strong> (Responder's follow-ups below):</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">2M</td><td class="nested-val"><strong>4-card Major.</strong></td></tr>
+                                <tr><td class="nested-key" style="width:55px;">2<span class="suit-d">♦</span></td><td class="nested-val"><strong>No Major.</strong> (Responder's follow-ups below):</td></tr>
                                 
                                 <tr style="background-color:#f1f5f9;"><td colspan="2" style="font-weight:700; color:#475569; padding-top:6px; padding-bottom:4px;">Over 2<span class="suit-d">♦</span>:</td></tr>
-                                <tr><td class="nested-key">2<span class="suit-h">♥</span></td><td class="nested-val"><strong>Garbage.</strong> Weak, short <span class="suit-d">♦</span>. (Drop dead).</td></tr>
-                                <tr><td class="nested-key">2NT</td><td class="nested-val"><strong>Invitational.</strong></td></tr>
-                                <tr><td class="nested-key">3m</td><td class="nested-val"><strong>Natural.</strong> Game Forcing.</td></tr>
-                                <tr><td class="nested-key">3M</td><td class="nested-val"><strong>Smolen.</strong> 5oM + 4M. Game Forcing.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">2<span class="suit-h">♥</span></td><td class="nested-val"><strong>Garbage.</strong> Weak, short <span class="suit-d">♦</span>. (Drop dead).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">2NT</td><td class="nested-val"><strong>Invitational.</strong></td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3m</td><td class="nested-val"><strong>Natural.</strong> Game Forcing.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3M</td><td class="nested-val"><strong>Smolen.</strong> 5oM + 4M. Game Forcing.</td></tr>
                             </table>
                         </td>
                     </tr>
@@ -44,15 +44,15 @@ export const structure1NT = `
                         <td style="padding: 14px; vertical-align: top;">
                             <table class="nested-table" style="width: 100%;">
                                 <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">Opener Rebid:</td></tr>
-                                <tr><td class="nested-key">2M</td><td class="nested-val"><strong>Accept.</strong> Min or Max (no fit).</td></tr>
-                                <tr><td class="nested-key">3M</td><td class="nested-val"><strong>Super Accept.</strong> Max + 4-card fit.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">2M</td><td class="nested-val"><strong>Accept.</strong> Min or Max (no fit).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3M</td><td class="nested-val"><strong>Super Accept.</strong> Max + 4-card fit.</td></tr>
 
                                 <tr style="background-color:#f1f5f9;"><td colspan="2" style="font-weight:700; color:#475569; padding-top:6px; padding-bottom:4px;">Responder (Over 2M):</td></tr>
-                                <tr><td class="nested-key">2NT</td><td class="nested-val"><strong>Invitational.</strong> Balanced.</td></tr>
-                                <tr><td class="nested-key">3M</td><td class="nested-val"><strong>Invitational.</strong> 6+ cards.</td></tr>
-                                <tr><td class="nested-key">New M</td><td class="nested-val"><strong>5-5 Majors.</strong> (2<span class="suit-s">♠</span> Inv+, 3<span class="suit-h">♥</span> GF).</td></tr>
-                                <tr><td class="nested-key">New m</td><td class="nested-val"><strong>Natural.</strong> Game Forcing.</td></tr>
-                                <tr><td class="nested-key">Splinter</td><td class="nested-val"><strong>Shortness.</strong> Game Forcing.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">2NT</td><td class="nested-val"><strong>Invitational.</strong> Balanced.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3M</td><td class="nested-val"><strong>Invitational.</strong> 6+ cards.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">New M</td><td class="nested-val"><strong>5-5 Majors.</strong> (2<span class="suit-s">♠</span> Inv+, 3<span class="suit-h">♥</span> GF).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">New m</td><td class="nested-val"><strong>Natural.</strong> Game Forcing.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">Splinter</td><td class="nested-val"><strong>Shortness.</strong> Game Forcing.</td></tr>
                             </table>
                         </td>
                     </tr>
@@ -65,11 +65,11 @@ export const structure1NT = `
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                             <table class="nested-table" style="width: 100%;">
-                                <tr><td class="nested-key">2NT</td><td class="nested-val"><strong>Minimum.</strong></td></tr>
-                                <tr><td class="nested-key">3<span class="suit-c">♣</span></td><td class="nested-val"><strong>Maximum.</strong></td></tr>
+                                <tr><td class="nested-key" style="width:55px;">2NT</td><td class="nested-val"><strong>Minimum.</strong></td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3<span class="suit-c">♣</span></td><td class="nested-val"><strong>Maximum.</strong></td></tr>
                                 <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">GF Club Rebids (Over 2NT / 3<span class="suit-c">♣</span>):</td></tr>
-                                <tr><td class="nested-key">3<span class="suit-d">♦</span>/<span class="suit-h">♥</span>/<span class="suit-s">♠</span></td><td class="nested-val"><strong>Shortness.</strong> Strong Club suit.</td></tr>
-                                <tr><td class="nested-key">4<span class="suit-c">♣</span></td><td class="nested-val"><strong>Natural.</strong> Forcing, no shortness.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3X</td><td class="nested-val"><strong>Shortness.</strong> Strong Club suit.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">4<span class="suit-c">♣</span></td><td class="nested-val"><strong>Natural.</strong> Forcing, no shortness.</td></tr>
                             </table>
                         </td>
                     </tr>
@@ -82,10 +82,10 @@ export const structure1NT = `
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                             <table class="nested-table" style="width: 100%;">
-                                <tr><td class="nested-key">3<span class="suit-c">♣</span></td><td class="nested-val"><strong>Forced.</strong> (Bad Diamonds/Weak Minors).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3<span class="suit-c">♣</span></td><td class="nested-val"><strong>Forced.</strong> (Bad Diamonds/Weak Minors).</td></tr>
                                 <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">GF Diamonds (Over 3<span class="suit-c">♣</span>):</td></tr>
-                                <tr><td class="nested-key">3<span class="suit-d">♦</span></td><td class="nested-val"><strong>Natural.</strong> Good Diamonds (Inv+).</td></tr>
-                                <tr><td class="nested-key">3<span class="suit-h">♥</span>/<span class="suit-s">♠</span>/4<span class="suit-c">♣</span></td><td class="nested-val"><strong>Shortness.</strong> Strong Diamond suit.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3<span class="suit-d">♦</span></td><td class="nested-val"><strong>Natural.</strong> Good Diamonds (Inv+).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3M/4<span class="suit-c">♣</span></td><td class="nested-val"><strong>Shortness.</strong> Strong Diamond suit.</td></tr>
                             </table>
                         </td>
                     </tr>
@@ -99,15 +99,15 @@ export const structure1NT = `
                         <td style="padding: 14px; vertical-align: top;">
                             <table class="nested-table" style="width: 100%;">
                                 <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">Opener 3<span class="suit-d">♦</span> (No 5M):</td></tr>
-                                <tr><td class="nested-key" style="padding-left:10px;">Resp 3<span class="suit-h">♥</span></td><td class="nested-val"><strong>Has 4 Spades.</strong> <br>&rarr; Opener 3<span class="suit-s">♠</span> (4S) / 3NT (No 4S).</td></tr>
-                                <tr><td class="nested-key" style="padding-left:10px;">Resp 3<span class="suit-s">♠</span></td><td class="nested-val"><strong>Has 4 Hearts.</strong> <br>&rarr; Opener 3NT (To Play) / 4<span class="suit-h">♥</span> (To Play).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">Resp 3<span class="suit-h">♥</span></td><td class="nested-val"><strong>Has 4 Spades.</strong> <br>&rarr; Opener 3<span class="suit-s">♠</span> (4S) / 3NT (No 4S).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">Resp 3<span class="suit-s">♠</span></td><td class="nested-val"><strong>Has 4 Hearts.</strong> <br>&rarr; Opener 3NT (To Play) / 4<span class="suit-h">♥</span> (To Play).</td></tr>
                                 
                                 <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">Opener Shows 5M:</td></tr>
-                                <tr><td class="nested-key" style="padding-left:10px;">Opener 3<span class="suit-h">♥</span></td><td class="nested-val"><strong>5 Hearts.</strong> <br>&rarr; Resp 3<span class="suit-s">♠</span> (Agrees <span class="suit-h">♥</span>, Slam Try).</td></tr>
-                                <tr><td class="nested-key" style="padding-left:10px;">Opener 3<span class="suit-s">♠</span></td><td class="nested-val"><strong>5 Spades.</strong> <br>&rarr; Resp 4<span class="suit-h">♥</span> (Agrees <span class="suit-s">♠</span>, Slam Try).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">Op 3<span class="suit-h">♥</span></td><td class="nested-val"><strong>5 Hearts.</strong> <br>&rarr; Resp 3<span class="suit-s">♠</span> (Agrees <span class="suit-h">♥</span>, Slam Try).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">Op 3<span class="suit-s">♠</span></td><td class="nested-val"><strong>5 Spades.</strong> <br>&rarr; Resp 4<span class="suit-h">♥</span> (Agrees <span class="suit-s">♠</span>, Slam Try).</td></tr>
 
                                 <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">Opener 3NT:</td></tr>
-                                <tr><td class="nested-key" style="padding-left:10px;">Meaning</td><td class="nested-val"><strong>4=5=2=2.</strong> <br>(Resp 4-level bids are Transfers).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">Meaning</td><td class="nested-val"><strong>4=5=2=2.</strong> <br>(Resp 4-level bids are Transfers).</td></tr>
                             </table>
                         </td>
                     </tr>
@@ -120,8 +120,8 @@ export const structure1NT = `
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                             <table class="nested-table" style="width: 100%;">
-                                <tr><td class="nested-key">3M</td><td class="nested-val"><strong>Stopper.</strong></td></tr>
-                                <tr><td class="nested-key">4m</td><td class="nested-val"><strong>Set Suit.</strong></td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3M</td><td class="nested-val"><strong>Stopper.</strong></td></tr>
+                                <tr><td class="nested-key" style="width:55px;">4m</td><td class="nested-val"><strong>Set Suit.</strong></td></tr>
                             </table>
                         </td>
                     </tr>
@@ -134,8 +134,8 @@ export const structure1NT = `
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                            <table class="nested-table" style="width: 100%;">
-                                <tr><td class="nested-key">Pass</td><td class="nested-val"><strong>To Play.</strong></td></tr>
-                                <tr><td class="nested-key">4M</td><td class="nested-val"><strong>To Play.</strong></td></tr>
+                                <tr><td class="nested-key" style="width:55px;">Pass</td><td class="nested-val"><strong>To Play.</strong></td></tr>
+                                <tr><td class="nested-key" style="width:55px;">4M</td><td class="nested-val"><strong>To Play.</strong></td></tr>
                             </table>
                         </td>
                     </tr>
@@ -148,7 +148,7 @@ export const structure1NT = `
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                             <table class="nested-table" style="width: 100%;">
-                                <tr><td class="nested-key">4M</td><td class="nested-val"><strong>To Play.</strong></td></tr>
+                                <tr><td class="nested-key" style="width:55px;">4M</td><td class="nested-val"><strong>To Play.</strong></td></tr>
                             </table>
                         </td>
                     </tr>
@@ -162,12 +162,12 @@ export const structure1NT = `
                         <td style="padding: 14px; vertical-align: top;">
                              <table class="nested-table" style="width: 100%;">
                                 <tr>
-                                    <td class="nested-key">4<span class="suit-d">♦</span></td><td class="nested-val" style="padding-right:15px;"><strong>0 or 4 Aces.</strong></td>
-                                    <td class="nested-key">4<span class="suit-h">♥</span></td><td class="nested-val"><strong>1 Ace.</strong></td>
+                                    <td class="nested-key" style="width:55px;">4<span class="suit-d">♦</span></td><td class="nested-val" style="padding-right:15px;"><strong>0 or 4 Aces.</strong></td>
+                                    <td class="nested-key" style="width:55px;">4<span class="suit-h">♥</span></td><td class="nested-val"><strong>1 Ace.</strong></td>
                                 </tr>
                                 <tr>
-                                    <td class="nested-key">4<span class="suit-s">♠</span></td><td class="nested-val" style="padding-right:15px;"><strong>2 Aces.</strong></td>
-                                    <td class="nested-key">4NT</td><td class="nested-val"><strong>3 Aces.</strong></td>
+                                    <td class="nested-key" style="width:55px;">4<span class="suit-s">♠</span></td><td class="nested-val" style="padding-right:15px;"><strong>2 Aces.</strong></td>
+                                    <td class="nested-key" style="width:55px;">4NT</td><td class="nested-val"><strong>3 Aces.</strong></td>
                                 </tr>
                             </table>
                         </td>
@@ -181,7 +181,7 @@ export const structure1NT = `
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                              <table class="nested-table" style="width: 100%;">
-                                <tr><td class="nested-key">Step</td><td class="nested-val"><strong>Sign Off.</strong> No Slam Interest.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">Step</td><td class="nested-val"><strong>Sign Off.</strong> No Slam Interest.</td></tr>
                             </table>
                         </td>
                     </tr>
@@ -194,9 +194,9 @@ export const structure1NT = `
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                              <table class="nested-table" style="width: 100%;">
-                                <tr><td class="nested-key">Pass</td><td class="nested-val"><strong>Minimum.</strong></td></tr>
-                                <tr><td class="nested-key">5NT</td><td class="nested-val"><strong>Pick a Slam.</strong> (Minors or 6NT).</td></tr>
-                                <tr><td class="nested-key">6X</td><td class="nested-val"><strong>5-card Suit.</strong></td></tr>
+                                <tr><td class="nested-key" style="width:55px;">Pass</td><td class="nested-val"><strong>Minimum.</strong></td></tr>
+                                <tr><td class="nested-key" style="width:55px;">5NT</td><td class="nested-val"><strong>Pick a Slam.</strong> (Minors or 6NT).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">6X</td><td class="nested-val"><strong>5-card Suit.</strong></td></tr>
                             </table>
                         </td>
                     </tr>
