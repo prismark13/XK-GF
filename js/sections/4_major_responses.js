@@ -20,8 +20,7 @@ export const majorResponses = `
                             <strong>Constructive</strong>
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            [cite_start]<strong>6 - 10 HCP.</strong> 3-4 Trumps[cite: 255].<br>
-                            <em>(Updated Oct 2025).</em>
+                            <strong>6 - 10 HCP.</strong> 3-4 Trumps.
                         </td>
                     </tr>
                     <tr style="border-bottom: 2px solid #e2e8f0;">
@@ -30,13 +29,13 @@ export const majorResponses = `
                             <strong>Jacoby 2NT</strong>
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            <strong>13+ HCP.</strong> 4+ Trumps. [cite_start]Game Forcing[cite: 216].<br>
+                            <strong>13+ HCP.</strong> 4+ Trumps. Game Forcing.<br>
                             <strong>Opener's Rebids:</strong>
                             <table class="nested-table" style="width: 100%;">
-                                [cite_start]<tr><td class="nested-key" style="width:55px;">3<span class="suit-c">♣</span></td><td class="nested-val"><strong>Any Minimum.</strong> (12-14)[cite: 217].</td></tr>
-                                [cite_start]<tr><td class="nested-key" style="width:55px;">3<span class="suit-d">♦</span></td><td class="nested-val"><strong>Extras (15+) + Shortness.</strong> (Resp 3<span class="suit-h">♥</span> asks loc)[cite: 218].</td></tr>
-                                [cite_start]<tr><td class="nested-key" style="width:55px;">3M</td><td class="nested-val"><strong>Extras (18+).</strong> No Shortness[cite: 229].</td></tr>
-                                [cite_start]<tr><td class="nested-key" style="width:55px;">3NT</td><td class="nested-val"><strong>Extras (15-17).</strong> Semi-Balanced (5422/6322)[cite: 230].</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3<span class="suit-c">♣</span></td><td class="nested-val"><strong>Any Minimum.</strong> (12-14).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3<span class="suit-d">♦</span></td><td class="nested-val"><strong>Extras (15+) + Shortness.</strong> (Resp 3<span class="suit-h">♥</span> asks loc).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3M</td><td class="nested-val"><strong>Extras (18+).</strong> No Shortness.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3NT</td><td class="nested-val"><strong>Extras (15-17).</strong> Semi-Balanced (5422/6322).</td></tr>
                             </table>
                         </td>
                     </tr>
@@ -46,7 +45,7 @@ export const majorResponses = `
                             <strong>Mixed Raise</strong>
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            [cite_start]<strong>7 - 9 HCP.</strong> 4+ Trumps[cite: 192].
+                            <strong>7 - 9 HCP.</strong> 4+ Trumps.
                         </td>
                     </tr>
                     <tr style="border-bottom: 2px solid #e2e8f0;">
@@ -57,9 +56,9 @@ export const majorResponses = `
                             <strong>Shortness</strong>
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            <strong>11 - 14 HCP.</strong> 4+ Trumps. [cite_start]Singleton/Void[cite: 379].<br>
-                            [cite_start]Opener 1<span class="suit-h">♥</span>: 3<span class="suit-s">♠</span> / 4<span class="suit-c">♣</span> / 4<span class="suit-d">♦</span>[cite: 193, 195, 196].<br>
-                            [cite_start]Opener 1<span class="suit-s">♠</span>: 4<span class="suit-c">♣</span> / 4<span class="suit-d">♦</span> / 4<span class="suit-h">♥</span>[cite: 212, 213, 214].
+                            <strong>11 - 14 HCP.</strong> 4+ Trumps. Singleton/Void.<br>
+                            Opener 1<span class="suit-h">♥</span>: 3<span class="suit-s">♠</span> / 4<span class="suit-c">♣</span> / 4<span class="suit-d">♦</span>.<br>
+                            Opener 1<span class="suit-s">♠</span>: 4<span class="suit-c">♣</span> / 4<span class="suit-d">♦</span> / 4<span class="suit-h">♥</span>.
                         </td>
                     </tr>
                     <tr>
@@ -68,7 +67,7 @@ export const majorResponses = `
                             <strong>Good 1-4</strong>
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            <strong>13 - 15 HCP.</strong> 4 Trumps. [cite_start]1 Outside Control[cite: 194, 211].
+                            <strong>13 - 15 HCP.</strong> 4 Trumps. 1 Outside Control.
                         </td>
                     </tr>
                 </tbody>
@@ -92,16 +91,16 @@ export const majorResponses = `
                             <strong>Semi-Forcing</strong><br>
                             (6-12 HCP)<br>
                             <span style="font-size:0.9em; color:#555;">Can contain 3-card raise.</span>
-                            [cite_start][cite: 181, 199]
+                           
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                             <table class="nested-table" style="width: 100%;">
-                                [cite_start]<tr><td class="nested-key" style="width:55px;">Pass</td><td class="nested-val"><strong>Balanced Minimum.</strong> (12-14)[cite: 238].</td></tr>
-                                [cite_start]<tr><td class="nested-key" style="width:55px;">2m</td><td class="nested-val"><strong>Natural.</strong> 3+ cards[cite: 182, 200].</td></tr>
-                                [cite_start]<tr><td class="nested-key" style="width:55px;">2M</td><td class="nested-val"><strong>6+ cards.</strong> Minimum[cite: 239].</td></tr>
-                                <tr><td class="nested-key" style="width:55px;">2<span class="suit-s">♠</span></td><td class="nested-val">(Over 1<span class="suit-h">♥</span>). [cite_start]<strong>Reverse (16+)</strong>[cite: 348].</td></tr>
-                                [cite_start]<tr><td class="nested-key" style="width:55px;">2NT</td><td class="nested-val"><strong>18-19.</strong> Balanced[cite: 238].</td></tr>
-                                [cite_start]<tr><td class="nested-key" style="width:55px;">3M</td><td class="nested-val"><strong>Extras.</strong> 6+ cards, semi-solid[cite: 240].</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">Pass</td><td class="nested-val"><strong>Balanced Minimum.</strong> (12-14).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">2m</td><td class="nested-val"><strong>Natural.</strong> 3+ cards.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">2M</td><td class="nested-val"><strong>6+ cards.</strong> Minimum.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">2<span class="suit-s">♠</span></td><td class="nested-val">(Over 1<span class="suit-h">♥</span>). <strong>Reverse (16+)</strong>.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">2NT</td><td class="nested-val"><strong>18-19.</strong> Balanced.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3M</td><td class="nested-val"><strong>Extras.</strong> 6+ cards, semi-solid.</td></tr>
                             </table>
                         </td>
                     </tr>
@@ -115,14 +114,14 @@ export const majorResponses = `
                             <strong>Game Force</strong><br>
                             (13+ HCP)<br>
                             <span style="font-size:0.9em; color:#555;">Natural.</span>
-                            [cite_start][cite: 185, 202]
+                           
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                             <table class="nested-table" style="width: 100%;">
-                                [cite_start]<tr><td class="nested-key" style="width:55px;">2M</td><td class="nested-val"><strong>Catch-all.</strong> (Does not promise 6)[cite: 239].</td></tr>
-                                [cite_start]<tr><td class="nested-key" style="width:55px;">2NT</td><td class="nested-val"><strong>Balanced.</strong> 12-14 or 18-19[cite: 238].</td></tr>
-                                [cite_start]<tr><td class="nested-key" style="width:55px;">3New</td><td class="nested-val"><strong>5-4 / 5-5.</strong> (16+ if Reverse)[cite: 237].</td></tr>
-                                [cite_start]<tr><td class="nested-key" style="width:55px;">3M</td><td class="nested-val"><strong>Extras.</strong> Solid suit[cite: 240].</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">2M</td><td class="nested-val"><strong>Catch-all.</strong> (Does not promise 6).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">2NT</td><td class="nested-val"><strong>Balanced.</strong> 12-14 or 18-19.</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3New</td><td class="nested-val"><strong>5-4 / 5-5.</strong> (16+ if Reverse).</td></tr>
+                                <tr><td class="nested-key" style="width:55px;">3M</td><td class="nested-val"><strong>Extras.</strong> Solid suit.</td></tr>
                             </table>
                         </td>
                     </tr>
@@ -148,7 +147,7 @@ export const majorResponses = `
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                             (Over 1<span class="suit-h">♥</span>). 4+ Spades. F1.<br>
-                            [cite_start]6+ HCP[cite: 180].
+                            6+ HCP.
                         </td>
                     </tr>
                     <tr style="border-bottom: 2px solid #e2e8f0;">
@@ -157,7 +156,7 @@ export const majorResponses = `
                             <strong>Weak Jump</strong>
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            (Over 1<span class="suit-h">♥</span>). 6+ <span class="suit-s">♠</span>. 0-2 <span class="suit-h">♥</span>. [cite_start]5-9 HCP[cite: 188].
+                            (Over 1<span class="suit-h">♥</span>). 6+ <span class="suit-s">♠</span>. 0-2 <span class="suit-h">♥</span>. 5-9 HCP.
                         </td>
                     </tr>
                      <tr>
@@ -166,7 +165,7 @@ export const majorResponses = `
                             <strong>Preemptive</strong>
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            [cite_start]Weak[cite: 197, 215].
+                            Weak.
                         </td>
                     </tr>
                 </tbody>
