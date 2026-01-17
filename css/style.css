@@ -1,23 +1,30 @@
 :root {
-    --bg-color: #f4f6f8;
+    /* Background is now a crisp, cool white-blue, not muddy grey */
+    --bg-color: #f7f9fc;
     --card-bg: #ffffff;
-    --text-main: #1a202c;
-    --text-muted: #718096;
-    --border-color: #e2e8f0;
     
-    /* Suit Colors */
-    --suit-spade: #0052cc; /* Deep Blue */
-    --suit-heart: #e53e3e; /* Red */
-    --suit-diam: #dd6b20;  /* Orange */
-    --suit-club: #276749;  /* Forest Green */
+    /* Text Colors */
+    --text-main: #2d3748;
+    --text-muted: #718096;
+    
+    /* Subtle Accents (Ice Blue instead of Grey) */
+    --accent-light: #eef3fc; 
+    --border-light: #e2e8f0;
+    
+    /* Suit Colors (Vibrant) */
+    --suit-spade: #106ebe; 
+    --suit-heart: #e53e3e; 
+    --suit-diam: #d97706;  
+    --suit-club: #15803d;  
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     background-color: var(--bg-color);
     color: var(--text-main);
     margin: 0;
     padding: 40px 20px;
+    line-height: 1.5;
 }
 
 .container {
@@ -25,122 +32,149 @@ body {
     margin: 0 auto;
 }
 
-/* Header Styling */
+/* --- Header --- */
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 800;
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
     margin: 0 0 10px 0;
-    color: #2d3748;
+    background: linear-gradient(135deg, #2b6cb0, #2d3748);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 .subtitle {
     font-size: 1.1rem;
     color: var(--text-muted);
     font-weight: 500;
+    letter-spacing: 0.5px;
 }
 
-/* Search Box */
+/* --- Search Box (Floating) --- */
 #search-box {
     width: 100%;
     max-width: 500px;
-    padding: 15px 25px;
-    margin-top: 20px;
+    padding: 16px 28px;
+    margin-top: 25px;
     border-radius: 50px;
-    border: 1px solid #cbd5e0;
+    border: 1px solid transparent;
+    background: white;
     font-size: 1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    transition: all 0.2s;
+    /* This shadow gives the "Pop" */
+    box-shadow: 0 10px 25px rgba(112, 144, 176, 0.12);
+    transition: all 0.3s ease;
     outline: none;
+    color: var(--text-main);
 }
 
 #search-box:focus {
-    border-color: var(--suit-spade);
-    box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.1);
+    box-shadow: 0 10px 30px rgba(16, 110, 190, 0.2);
+    transform: translateY(-2px);
 }
 
-/* Accordion Sections */
+#search-box::placeholder {
+    color: #a0aec0;
+}
+
+/* --- Cards (Details) --- */
 details {
     background: var(--card-bg);
-    border-radius: 12px;
-    margin-bottom: 16px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
-    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 16px;
+    margin-bottom: 20px;
+    /* Clean shadow, no border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     overflow: hidden;
-    transition: box-shadow 0.2s ease;
+    transition: all 0.3s ease;
+}
+
+details:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 details[open] {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transform: none; /* Keep steady when open */
 }
 
 summary {
-    padding: 20px 24px;
+    padding: 24px 28px;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     cursor: pointer;
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #2d3748;
 }
 
 summary::-webkit-details-marker { display: none; }
 
+/* Custom +/- Icon */
 summary::after {
     content: '+';
-    font-weight: 400;
-    color: var(--text-muted);
-    font-size: 1.5rem;
+    font-weight: 300;
+    color: #a0aec0;
+    font-size: 1.8rem;
+    line-height: 0;
+    transition: transform 0.2s;
 }
 
-details[open] summary::after { content: '−'; }
+details[open] summary::after {
+    content: '−';
+    color: var(--suit-spade);
+    transform: rotate(0deg); 
+}
 
 .content {
-    padding: 0 24px 24px 24px;
-    border-top: 1px solid var(--border-color);
-    animation: fadeIn 0.3s ease;
+    padding: 0 28px 28px 28px;
+    animation: slideDown 0.3s ease-out;
 }
 
-/* Badges (Top of sections) */
+/* --- Badges (Pills) --- */
 .badge-block {
     display: inline-block;
     vertical-align: top;
-    background: #f7fafc;
-    border: 1px solid #edf2f7;
-    border-radius: 8px;
-    padding: 12px 16px;
-    margin: 15px 15px 0 0;
+    /* Subtle Ice Blue Background */
+    background: var(--accent-light);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 10px 15px 0 0;
     width: calc(33.33% - 22px);
     box-sizing: border-box;
+    border: 1px solid rgba(255,255,255,0.5);
 }
 
 .badge-label {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-muted);
-    font-weight: 700;
-    margin-bottom: 4px;
+    letter-spacing: 1px;
+    color: #5a67d8; /* Soft Indigo */
+    font-weight: 800;
+    margin-bottom: 6px;
 }
 
 .badge-desc {
     font-size: 0.95rem;
     font-weight: 600;
-    line-height: 1.4;
+    color: #2d3748;
 }
 
-/* Tables */
+/* --- Tables --- */
 .table-wrapper {
-    margin-top: 25px;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
+    margin-top: 30px;
+    border-radius: 12px;
     overflow: hidden;
+    /* Very subtle border */
+    border: 1px solid #edf2f7;
 }
 
 table {
@@ -151,48 +185,65 @@ table {
 
 th {
     text-align: left;
+    /* Gradient or solid light header */
     background: #f8fafc;
-    color: #4a5568;
-    font-weight: 600;
+    color: #64748b;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 0.75rem;
-    padding: 12px 16px;
-    border-bottom: 1px solid var(--border-color);
+    padding: 14px 20px;
+    border-bottom: 1px solid #e2e8f0;
+    letter-spacing: 0.05em;
 }
 
 td {
-    padding: 14px 16px;
-    border-bottom: 1px solid #edf2f7;
+    padding: 16px 20px;
+    border-bottom: 1px solid #f1f5f9;
     vertical-align: top;
     color: #2d3748;
 }
 
 tr:last-child td { border-bottom: none; }
+tr:hover td { background-color: #fafcff; } /* Subtle hover row */
 
-.col-resp { width: 18%; font-family: 'Roboto Mono', monospace; font-weight: 700; color: #1a202c; }
-.col-meaning { width: 25%; font-weight: 600; }
+.col-resp { width: 20%; font-family: 'SF Mono', 'Roboto Mono', monospace; font-weight: 700; color: #3182ce; }
+.col-meaning { width: 25%; font-weight: 700; color: #2d3748; }
 
-/* Subheaders */
+/* --- Subheaders --- */
 .subheader-bar {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 0.85rem;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-muted);
-    font-weight: 700;
-    border-bottom: 2px solid #edf2f7;
-    padding-bottom: 5px;
+    letter-spacing: 1.2px;
+    color: #718096;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
 }
 
-/* Suits */
+.subheader-bar::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e2e8f0;
+    margin-left: 15px;
+}
+
+/* --- Suit Colors --- */
 .suit-s { color: var(--suit-spade); }
 .suit-h { color: var(--suit-heart); }
 .suit-d { color: var(--suit-diam); }
 .suit-c { color: var(--suit-club); }
 
-@media (max-width: 600px) {
-    .badge-block { width: 100%; margin-right: 0; }
-    .col-resp { width: 30%; }
+/* --- Animation --- */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+@media (max-width: 700px) {
+    .badge-block { width: 100%; margin-right: 0; margin-bottom: 10px; }
+    .col-resp { width: 30%; }
+    h1 { font-size: 2rem; }
+}
