@@ -10,7 +10,7 @@ export const generalAgreements = `
                 </div>
                 <div style="font-size: 0.95em; color: #334155; line-height: 1.4;">
                     <strong>5-Card Majors.</strong><br>
-                    [cite_start]10+ HCP (Rule of 20). [cite: 179]
+                    10+ HCP (Rule of 20).
                 </div>
             </div>
 
@@ -20,7 +20,7 @@ export const generalAgreements = `
                 </div>
                 <div style="font-size: 0.95em; color: #334155; line-height: 1.4;">
                     <strong>Semi-Forcing.</strong><br>
-                    [cite_start]6 - 12 HCP. [cite: 181]
+                    6 - 12 HCP.
                 </div>
             </div>
 
@@ -30,7 +30,7 @@ export const generalAgreements = `
                 </div>
                 <div style="font-size: 0.95em; color: #334155; line-height: 1.4;">
                     <strong>Game Forcing.</strong><br>
-                    [cite_start]100% Force. [cite: 185, 186]
+                    100% Force.
                 </div>
             </div>
         </div>
@@ -49,17 +49,17 @@ export const generalAgreements = `
                     <tr>
                         <td><strong>Carding</strong></td>
                         <td><strong>UDCA</strong></td>
-                        [cite_start]<td>Upside-Down Count & Attitude. [cite: 569]</td>
+                        <td>Upside-Down Count & Attitude.</td>
                     </tr>
                     <tr>
                         <td><strong>Leads vs Suits</strong></td>
                         <td><strong>3rd / Low</strong></td>
-                        [cite_start]<td>3rd from Even, Low from Odd. [cite: 571]</td>
+                        <td>3rd from Even, Low from Odd.</td>
                     </tr>
                     <tr>
                         <td><strong>Leads vs NT</strong></td>
                         <td><strong>4th Best</strong></td>
-                        [cite_start]<td>From suits we like. [cite: 570]</td>
+                        <td>From suits we like.</td>
                     </tr>
                 </tbody>
             </table>
@@ -79,22 +79,22 @@ export const generalAgreements = `
                     <tr>
                         <td><strong>1NT Range</strong></td>
                         <td><strong>15 - 17 HCP</strong></td>
-                        [cite_start]<td>Can have 5-card Major. [cite: 2]</td>
+                        <td>Can have 5-card Major.</td>
                     </tr>
                     <tr>
                         <td><strong>2NT Range</strong></td>
                         <td><strong>20 - 21 HCP</strong></td>
-                        [cite_start]<td>(Or 2C-2D-2NT). [cite: 161]</td>
+                        <td>(Or 2C-2D-2NT).</td>
                     </tr>
                     <tr>
                         <td><strong>Fourth Suit</strong></td>
                         <td><strong>Game Forcing</strong></td>
-                        [cite_start]<td>1 round force is NOT played. [cite: 342]</td>
+                        <td>1 round force is NOT played.</td>
                     </tr>
                     <tr>
                         <td><strong>Jump Shifts</strong></td>
                         <td><strong>Weak (UPH)</strong></td>
-                        [cite_start]<td>2-level weak, 3-level Invitational. [cite: 9]</td>
+                        <td>2-level weak, 3-level Invitational.</td>
                     </tr>
                 </tbody>
             </table>
@@ -114,17 +114,17 @@ export const generalAgreements = `
                     <tr>
                         <td><strong>Negative</strong></td>
                         <td><strong>Thru 7<span class="suit-h">♥</span></strong></td>
-                        [cite_start]<td>[cite: 491]</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td><strong>Support</strong></td>
                         <td><strong>Thru 2<span class="suit-s">♠</span></strong></td>
-                        [cite_start]<td>Shows 3-card support. [cite: 491]</td>
+                        <td>Shows 3-card support.</td>
                     </tr>
                     <tr>
                         <td><strong>Responsive</strong></td>
                         <td><strong>Thru 7<span class="suit-h">♥</span></strong></td>
-                        [cite_start]<td>[cite: 491]</td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
