@@ -103,16 +103,16 @@ export const generalAgreements = `
         <div class="subheader-bar">Rosenberg Rules to Responding</div>
         <div style="background-color: #fff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 15px;">
             <ol style="margin: 0; padding-left: 20px; line-height: 1.6; color: #334155;">
-                [cite_start]<li style="margin-bottom: 4px;">Respond with an <strong>Ace</strong>[cite: 331].</li>
-                [cite_start]<li style="margin-bottom: 4px;">Respond with a <strong>5-card Major</strong> biddable at the 1-level[cite: 332].</li>
-                [cite_start]<li style="margin-bottom: 4px;">Respond with a <strong>6+ card Heart suit</strong>[cite: 333].</li>
-                [cite_start]<li style="margin-bottom: 4px;">Respond in <strong>3rd seat</strong> with any <strong>Void</strong> if partner opens 1M[cite: 334].</li>
-                [cite_start]<li style="margin-bottom: 4px;">Respond with <strong>4-card support</strong> of partner’s major[cite: 335].</li>
-                [cite_start]<li style="margin-bottom: 4px;">Respond with <strong>3-card support</strong> of partner’s major <strong>Non-Vul</strong>[cite: 336].</li>
-                [cite_start]<li style="margin-bottom: 4px;">Respond with <strong>0-1 Diamond</strong> to partner’s <strong>Vul 1<span class="suit-d">♦</span></strong>[cite: 337].</li>
-                [cite_start]<li style="margin-bottom: 4px;">Respond with <strong>0-1 Club</strong> to partner’s <strong>1<span class="suit-c">♣</span></strong>[cite: 338].</li>
-                [cite_start]<li style="margin-bottom: 4px;">Respond with <strong>Doubleton Club</strong> to partner’s <strong>1<span class="suit-c">♣</span> Vul</strong>[cite: 339].</li>
-                [cite_start]<li>Respond to partner’s <strong>1<span class="suit-c">♣</span> Non-Vul</strong> if I think they have game[cite: 340].</li>
+                <li style="margin-bottom: 4px;">Respond with an <strong>Ace</strong>.</li>
+                <li style="margin-bottom: 4px;">Respond with a <strong>5-card Major</strong> biddable at the 1-level.</li>
+                <li style="margin-bottom: 4px;">Respond with a <strong>6+ card Heart suit</strong>.</li>
+                <li style="margin-bottom: 4px;">Respond in <strong>3rd seat</strong> with any <strong>Void</strong> if partner opens 1M.</li>
+                <li style="margin-bottom: 4px;">Respond with <strong>4-card support</strong> of partner’s major.</li>
+                <li style="margin-bottom: 4px;">Respond with <strong>3-card support</strong> of partner’s major <strong>Non-Vul</strong>.</li>
+                <li style="margin-bottom: 4px;">Respond with <strong>0-1 Diamond</strong> to partner’s <strong>Vul 1<span class="suit-d">♦</span></strong>.</li>
+                <li style="margin-bottom: 4px;">Respond with <strong>0-1 Club</strong> to partner’s <strong>1<span class="suit-c">♣</span></strong>.</li>
+                <li style="margin-bottom: 4px;">Respond with <strong>Doubleton Club</strong> to partner’s <strong>1<span class="suit-c">♣</span> Vul</strong>.</li>
+                <li>Respond to partner’s <strong>1<span class="suit-c">♣</span> Non-Vul</strong> if I think they have game.</li>
             </ol>
         </div>
 
