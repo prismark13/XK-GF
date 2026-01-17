@@ -1,233 +1,209 @@
 :root {
-    /* Background is now a crisp, cool white-blue, not muddy grey */
-    --bg-color: #f7f9fc;
+    /* Stronger Background (Cool Grey-Blue) */
+    --bg-color: #dbeafe; 
     --card-bg: #ffffff;
     
-    /* Text Colors */
-    --text-main: #2d3748;
-    --text-muted: #718096;
+    /* Text Colors - High Contrast */
+    --text-main: #0f172a;
+    --text-muted: #475569;
     
-    /* Subtle Accents (Ice Blue instead of Grey) */
-    --accent-light: #eef3fc; 
-    --border-light: #e2e8f0;
+    /* Strong Accent Colors */
+    --accent-primary: #1e40af; /* Deep Royal Blue */
+    --accent-secondary: #0f766e; /* Deep Teal */
     
-    /* Suit Colors (Vibrant) */
-    --suit-spade: #106ebe; 
-    --suit-heart: #e53e3e; 
-    --suit-diam: #d97706;  
-    --suit-club: #15803d;  
+    /* Suit Colors (Vivid) */
+    --suit-spade: #1e3a8a; /* Navy Spade */
+    --suit-heart: #dc2626; /* Vivid Red */
+    --suit-diam: #d97706;  /* Deep Orange */
+    --suit-club: #15803d;  /* Grass Green */
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: var(--bg-color);
+    background-image: linear-gradient(180deg, #dbeafe 0%, #eff6ff 100%);
     color: var(--text-main);
     margin: 0;
-    padding: 40px 20px;
-    line-height: 1.5;
+    padding: 50px 20px;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 850px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 /* --- Header --- */
 header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 h1 {
-    font-size: 2.8rem;
-    font-weight: 800;
-    letter-spacing: -1.5px;
-    margin: 0 0 10px 0;
-    background: linear-gradient(135deg, #2b6cb0, #2d3748);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin: 0;
+    /* Deep Navy Text */
+    color: #1e3a8a;
+    text-shadow: 2px 2px 0px rgba(255,255,255,0.5);
 }
 
 .subtitle {
-    font-size: 1.1rem;
-    color: var(--text-muted);
-    font-weight: 500;
-    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+    color: #475569;
+    font-weight: 600;
+    margin-top: 5px;
 }
 
-/* --- Search Box (Floating) --- */
+/* --- Strong Search Box --- */
 #search-box {
     width: 100%;
-    max-width: 500px;
-    padding: 16px 28px;
-    margin-top: 25px;
-    border-radius: 50px;
-    border: 1px solid transparent;
+    max-width: 550px;
+    padding: 18px 30px;
+    margin-top: 30px;
+    border-radius: 12px;
+    border: 2px solid #3b82f6; /* bright blue border */
     background: white;
-    font-size: 1rem;
-    /* This shadow gives the "Pop" */
-    box-shadow: 0 10px 25px rgba(112, 144, 176, 0.12);
-    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3); /* Blue glow shadow */
     outline: none;
     color: var(--text-main);
+    font-weight: 600;
 }
 
 #search-box:focus {
-    box-shadow: 0 10px 30px rgba(16, 110, 190, 0.2);
-    transform: translateY(-2px);
+    box-shadow: 0 15px 35px -5px rgba(59, 130, 246, 0.5);
+    transform: scale(1.02);
 }
 
-#search-box::placeholder {
-    color: #a0aec0;
-}
-
-/* --- Cards (Details) --- */
+/* --- Cards (High Contrast) --- */
 details {
     background: var(--card-bg);
-    border-radius: 16px;
-    margin-bottom: 20px;
-    /* Clean shadow, no border */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    margin-bottom: 24px;
+    /* Deep, sharp shadow */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border: none;
     overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-details:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-}
-
-details[open] {
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-    transform: none; /* Keep steady when open */
 }
 
 summary {
-    padding: 24px 28px;
-    font-weight: 700;
-    font-size: 1.15rem;
+    padding: 24px 30px;
+    font-weight: 800; /* Bolder text */
+    font-size: 1.25rem;
     cursor: pointer;
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #2d3748;
+    color: #1e293b;
+    border-left: 6px solid var(--accent-primary); /* Blue accent bar on left */
 }
 
 summary::-webkit-details-marker { display: none; }
 
-/* Custom +/- Icon */
+/* Bold +/- Button */
 summary::after {
     content: '+';
-    font-weight: 300;
-    color: #a0aec0;
-    font-size: 1.8rem;
-    line-height: 0;
-    transition: transform 0.2s;
+    font-weight: 900;
+    color: #cbd5e1;
+    font-size: 2rem;
+    background: #f8fafc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 details[open] summary::after {
     content: '−';
-    color: var(--suit-spade);
-    transform: rotate(0deg); 
+    color: white;
+    background: var(--accent-primary);
 }
 
 .content {
-    padding: 0 28px 28px 28px;
-    animation: slideDown 0.3s ease-out;
+    padding: 0 30px 30px 30px;
 }
 
-/* --- Badges (Pills) --- */
+/* --- Badges (Solid Color Pop) --- */
 .badge-block {
     display: inline-block;
     vertical-align: top;
-    /* Subtle Ice Blue Background */
-    background: var(--accent-light);
-    border-radius: 12px;
-    padding: 14px 18px;
-    margin: 10px 15px 0 0;
-    width: calc(33.33% - 22px);
+    /* Solid Dark Blue Background */
+    background: #1e3a8a; 
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 15px 0 0;
+    width: calc(33.33% - 25px);
     box-sizing: border-box;
-    border: 1px solid rgba(255,255,255,0.5);
+    color: white; /* White text on dark bg */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .badge-label {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #5a67d8; /* Soft Indigo */
-    font-weight: 800;
-    margin-bottom: 6px;
+    color: #93c5fd; /* Light blue text for label */
+    font-weight: 700;
+    margin-bottom: 8px;
+    display: block;
 }
 
 .badge-desc {
     font-size: 0.95rem;
-    font-weight: 600;
-    color: #2d3748;
+    font-weight: 500;
+    line-height: 1.4;
 }
 
 /* --- Tables --- */
 .table-wrapper {
-    margin-top: 30px;
-    border-radius: 12px;
+    margin-top: 35px;
+    border-radius: 8px;
     overflow: hidden;
-    /* Very subtle border */
-    border: 1px solid #edf2f7;
+    border: 2px solid #e2e8f0;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.95rem;
 }
 
 th {
     text-align: left;
-    /* Gradient or solid light header */
-    background: #f8fafc;
-    color: #64748b;
-    font-weight: 700;
+    background: #f1f5f9;
+    color: #334155;
+    font-weight: 800;
     text-transform: uppercase;
-    font-size: 0.75rem;
-    padding: 14px 20px;
-    border-bottom: 1px solid #e2e8f0;
-    letter-spacing: 0.05em;
+    font-size: 0.8rem;
+    padding: 16px 20px;
+    border-bottom: 2px solid #cbd5e0;
 }
 
 td {
-    padding: 16px 20px;
-    border-bottom: 1px solid #f1f5f9;
-    vertical-align: top;
-    color: #2d3748;
+    padding: 18px 20px;
+    border-bottom: 1px solid #e2e8f0;
+    font-weight: 500;
 }
 
-tr:last-child td { border-bottom: none; }
-tr:hover td { background-color: #fafcff; } /* Subtle hover row */
-
-.col-resp { width: 20%; font-family: 'SF Mono', 'Roboto Mono', monospace; font-weight: 700; color: #3182ce; }
-.col-meaning { width: 25%; font-weight: 700; color: #2d3748; }
+.col-resp { width: 18%; font-family: monospace; font-size: 1rem; font-weight: 700; color: #0284c7; } /* Bright Blue Bids */
+.col-meaning { width: 25%; font-weight: 700; color: #0f172a; }
 
 /* --- Subheaders --- */
 .subheader-bar {
-    margin-top: 35px;
+    margin-top: 40px;
     margin-bottom: 15px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: #718096;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-}
-
-.subheader-bar::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: #e2e8f0;
-    margin-left: 15px;
+    letter-spacing: 1px;
+    color: #0f172a; /* Dark text */
+    font-weight: 900;
+    border-bottom: 3px solid #3b82f6; /* Thick blue underline */
+    padding-bottom: 8px;
+    display: inline-block;
 }
 
 /* --- Suit Colors --- */
@@ -236,14 +212,7 @@ tr:hover td { background-color: #fafcff; } /* Subtle hover row */
 .suit-d { color: var(--suit-diam); }
 .suit-c { color: var(--suit-club); }
 
-/* --- Animation --- */
-@keyframes slideDown {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
 @media (max-width: 700px) {
-    .badge-block { width: 100%; margin-right: 0; margin-bottom: 10px; }
-    .col-resp { width: 30%; }
-    h1 { font-size: 2rem; }
+    .badge-block { width: 100%; margin-right: 0; }
+    h1 { font-size: 2.5rem; }
 }
