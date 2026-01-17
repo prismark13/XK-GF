@@ -3,50 +3,145 @@ export const structure2NT = `
     <summary><span>2NT Structure (20 - 21)</span></summary>
     <div class="content">
         <div class="table-wrapper">
-            <table>
+            <table style="border-collapse: collapse; width: 100%;">
                 <thead>
-                    <tr><th class="col-resp">Resp</th><th class="col-meaning">Convention</th><th class="col-cont">Continuations</th></tr>
+                    <tr style="background-color: #f8fafc; border-bottom: 2px solid #e2e8f0;">
+                        <th style="width: 15%; padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Bid</th>
+                        <th style="width: 25%; padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Meaning</th>
+                        <th style="padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Continuations</th>
+                    </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="col-resp">3<span class="suit-c">♣</span></td>
-                        <td><strong>Puppet Stayman</strong></td>
-                        <td>
-                            Asks for 5-card Major.
-                            <br><strong>3<span class="suit-d">♦</span></strong> = 1 or 2 Majors.
-                            <br><strong>3M</strong> = 5-card Major.
-                            <br><strong>3NT</strong> = No Major.
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">3<span class="suit-c">♣</span></td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            [cite_start]<strong>Stayman</strong> [cite: 162]<br>
+                            Asks for 4+ card Major.
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <table class="nested-table" style="width: 100%;">
+                                <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">Opener Rebid:</td></tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">3<span class="suit-d">♦</span></td>
+                                    [cite_start]<td class="nested-val"><strong>No 4M.</strong> [cite: 163] (Follow-ups below)</td>
+                                </tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">3<span class="suit-h">♥</span></td>
+                                    [cite_start]<td class="nested-val"><strong>4-5 Hearts.</strong> [cite: 166] &rarr; [cite_start]3<span class="suit-s">♠</span> agrees <span class="suit-h">♥</span>[cite: 167].</td>
+                                </tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">3<span class="suit-s">♠</span></td>
+                                    [cite_start]<td class="nested-val"><strong>4-5 Spades.</strong> [cite: 168] &rarr; [cite_start]4<span class="suit-h">♥</span> agrees <span class="suit-s">♠</span>[cite: 169].</td>
+                                </tr>
+
+                                <tr style="background-color:#f1f5f9;"><td colspan="2" style="font-weight:700; color:#475569; padding-top:6px; padding-bottom:4px;">Responder over 3<span class="suit-d">♦</span> (Smolen):</td></tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">3<span class="suit-h">♥</span></td>
+                                    [cite_start]<td class="nested-val"><strong>5<span class="suit-s">♠</span> + 4<span class="suit-h">♥</span>.</strong> [cite: 164]</td>
+                                </tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">3<span class="suit-s">♠</span></td>
+                                    [cite_start]<td class="nested-val"><strong>5<span class="suit-h">♥</span> + 4<span class="suit-s">♠</span>.</strong> [cite: 165]</td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="col-resp"><span class="suit-d">3♦</span></td>
-                        <td><strong>Jacoby Tfer</strong></td>
-                        <td>Transfer to <span class="suit-h">Hearts</span> (5+).</td>
+                    
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; vertical-align: top;"><span class="suit-d">3♦</span></td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            [cite_start]<strong>Jacoby Transfer</strong> [cite: 170]<br>
+                            Transfer to <span class="suit-h">Hearts</span> (5+).
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <table class="nested-table" style="width: 100%;">
+                                <tr><td class="nested-key" style="width:55px;">3<span class="suit-h">♥</span></td><td class="nested-val"><strong>Accept.</strong></td></tr>
+                            </table>
+                        </td>
                     </tr>
-                    <tr>
-                        <td class="col-resp"><span class="suit-h">3♥</span></td>
-                        <td><strong>Jacoby Tfer</strong></td>
-                        <td>Transfer to <span class="suit-s">Spades</span> (5+).</td>
+
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; vertical-align: top;"><span class="suit-h">3♥</span></td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            [cite_start]<strong>Jacoby Transfer</strong> [cite: 171]<br>
+                            Transfer to <span class="suit-s">Spades</span> (5+).
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <table class="nested-table" style="width: 100%;">
+                                <tr><td class="nested-key" style="width:55px;">3<span class="suit-s">♠</span></td><td class="nested-val"><strong>Accept.</strong></td></tr>
+                            </table>
+                        </td>
                     </tr>
-                    <tr>
-                        <td class="col-resp">3<span class="suit-s">♠</span></td>
-                        <td><strong>Minor Stayman</strong></td>
-                        <td>Slam interest in Minors (5-4+). Denies 4+ Major.</td>
+
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">3<span class="suit-s">♠</span></td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            [cite_start]<strong>Relay</strong> [cite: 172]<br>
+                            Forces 3NT.
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <table class="nested-table" style="width: 100%;">
+                                <tr><td class="nested-key" style="width:55px;">3NT</td><td class="nested-val"><strong>Forced.</strong></td></tr>
+                            </table>
+                        </td>
                     </tr>
-                    <tr>
-                        <td class="col-resp">4<span class="suit-c">♣</span></td>
-                        <td><strong>GF Club</strong></td>
-                        <td>GF Club one-suiter (Slam Try).</td>
+                    
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">4<span class="suit-c">♣</span></td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            [cite_start]<strong>Club One-Suiter</strong> [cite: 173]<br>
+                            Game Forcing.
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                             Natural.
+                        </td>
                     </tr>
-                    <tr>
-                        <td class="col-resp"><span class="suit-d">4♦</span></td>
-                        <td><strong>GF Diam</strong></td>
-                        <td>GF Diamond one-suiter (Slam Try).</td>
+
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #d97706; padding: 14px; vertical-align: top;"><span class="suit-d">4♦</span></td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            [cite_start]<strong>Diamond One-Suiter</strong> [cite: 174]<br>
+                            Game Forcing.
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                             Natural.
+                        </td>
                     </tr>
+
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; vertical-align: top;"><span class="suit-h">4♥</span></td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            [cite_start]<strong>Minors 5-5+</strong> [cite: 175]<br>
+                            Shortness in <span class="suit-h">Hearts</span> (0-1).
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                             Game Forcing.
+                        </td>
+                    </tr>
+
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">4<span class="suit-s">♠</span></td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            [cite_start]<strong>Minors 5-5+</strong> [cite: 176]<br>
+                            Shortness in <span class="suit-s">Spades</span> (0-1).
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                             Game Forcing.
+                        </td>
+                    </tr>
+                    
                     <tr>
-                        <td class="col-resp">4M</td>
-                        <td><strong>Minors</strong></td>
-                        <td>GF Minor 2-suiter (Shortness in Bid Major).</td>
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">4NT</td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Quantitative</strong><br>
+                            Invite to 6NT.
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                             <table class="nested-table" style="width: 100%;">
+                                <tr><td class="nested-key" style="width:55px;">Pass</td><td class="nested-val"><strong>Minimum.</strong></td></tr>
+                                <tr><td class="nested-key" style="width:55px;">6NT</td><td class="nested-val"><strong>Accept.</strong></td></tr>
+                            </table>
+                        </td>
                     </tr>
                 </tbody>
             </table>
