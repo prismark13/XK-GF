@@ -1,117 +1,131 @@
 export const structure1NT = `
 <details>
-    <summary><span>1NT Structure (15 - 17) [cite: 2]</span></summary>
+    <summary><span>1NT Structure (15 - 17)</span></summary>
     <div class="content">
         <div class="table-wrapper">
             <table>
                 <thead>
-                    <tr><th class="col-resp">Resp</th><th class="col-meaning">Meaning</th><th class="col-cont">Continuations</th></tr>
+                    <tr>
+                        <th class="col-resp">Bid</th>
+                        <th class="col-meaning">Meaning</th>
+                        <th class="col-cont">Continuations</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="col-resp">2<span class="suit-c">&clubs;</span></td>
-                        <td><strong>Stayman</strong></td>
+                        <td class="col-resp">2<span class="suit-c">♣</span></td>
                         <td>
-                            Promises 4-card Major. [cite: 36]<br>
-                            <strong>Smolen:</strong> 1N-2C-2D-3M = 5oM + 4M, GF. [cite: 103, 104]
+                            <strong>Stayman</strong><br>
+                            [cite_start]Promises 4+ Major[cite: 36].
+                        </td>
+                        <td>
+                            <strong>2<span class="suit-d">♦</span></strong>: No Major. (Resp: 3M Smolen, 2NT Inv).<br>
+                            <strong>2M</strong>: 4-card Major.
                         </td>
                     </tr>
                     <tr>
-                        <td class="col-resp"><span class="suit-d">2&diams;</span></td>
-                        <td><strong>Jacoby Tfer</strong></td>
+                        <td class="col-resp"><span class="suit-d">2♦</span></td>
                         <td>
-                            Transfer to <span class="suit-h">Hearts</span> (5+). [cite: 37]<br>
-                            <strong>2<span class="suit-h">&hearts;</span></strong> = Normal Accept. [cite: 38]<br>
-                            <strong>3<span class="suit-h">&hearts;</span></strong> = Super Accept. [cite: 39]
+                            <strong>Jacoby Transfer</strong><br>
+                            [cite_start]5+ <span class="suit-h">Hearts</span>[cite: 37].
+                        </td>
+                        <td>
+                            <strong>2<span class="suit-h">♥</span></strong>: Normal accept.<br>
+                            [cite_start]<strong>3<span class="suit-h">♥</span></strong>: Super accept (Max + 4-card fit)[cite: 39].
                         </td>
                     </tr>
                     <tr>
-                        <td class="col-resp"><span class="suit-h">2&hearts;</span></td>
-                        <td><strong>Jacoby Tfer</strong></td>
+                        <td class="col-resp"><span class="suit-h">2♥</span></td>
                         <td>
-                            Transfer to <span class="suit-s">Spades</span> (5+). [cite: 40]<br>
-                            <strong>2<span class="suit-s">&spades;</span></strong> = Normal Accept. [cite: 41]<br>
-                            <strong>3<span class="suit-s">&spades;</span></strong> = Super Accept. [cite: 42]
+                            <strong>Jacoby Transfer</strong><br>
+                            [cite_start]5+ <span class="suit-s">Spades</span>[cite: 40].
+                        </td>
+                        <td>
+                            <strong>2<span class="suit-s">♠</span></strong>: Normal accept.<br>
+                            [cite_start]<strong>3<span class="suit-s">♠</span></strong>: Super accept (Max + 4-card fit)[cite: 42].
                         </td>
                     </tr>
                     <tr>
                         <td class="col-resp">2<span class="suit-s">♠</span></td>
-                        <td><strong>Range / Clubs</strong></td>
                         <td>
-                            Either Balanced Inv OR Clubs (Weak or Strong). <br>
-                            <strong>2NT</strong> = Min.<br>
-                            <strong>3<span class="suit-c">&clubs;</span></strong> = Max. [cite: 44, 45]
+                            <strong>Range Ask / Clubs</strong><br>
+                            [cite_start]Bal Inv <em>OR</em> Club 1-suiter[cite: 43].
+                        </td>
+                        <td>
+                            <strong>2NT</strong>: Minimum.<br>
+                            [cite_start]<strong>3<span class="suit-c">♣</span></strong>: Maximum[cite: 44, 45].
                         </td>
                     </tr>
                     <tr>
                         <td class="col-resp">2NT</td>
-                        <td><strong>Diamonds</strong></td>
                         <td>
-                            Diamonds (Weak or Strong) OR Both Minors Weak. [cite: 49]<br>
-                            <strong>3<span class="suit-c">&clubs;</span></strong> = Forced (Diamonds worse than Qxx). [cite: 50]<br>
-                            <strong>3<span class="suit-d">&diams;</span></strong> = Qxx or better diamonds. [cite: 52]
+                            <strong>Diamonds</strong><br>
+                            [cite_start]Weak or Strong 1-suiter[cite: 49].
+                        </td>
+                        <td>
+                            <strong>3<span class="suit-c">♣</span></strong>: Forced (Bad Diamonds).<br>
+                            [cite_start]<strong>3<span class="suit-d">♦</span></strong>: Competitive (Good Diamonds)[cite: 50, 52].
                         </td>
                     </tr>
                     <tr>
-                        <td class="col-resp">3<span class="suit-c">&clubs;</span></td>
-                        <td><strong>Puppet</strong></td>
+                        <td class="col-resp">3<span class="suit-c">♣</span></td>
                         <td>
-                            Puppet Stayman. Asks for 5-card Major. <br>
-                            (With 2 4-card majors, responder starts with 2<span class="suit-c">&clubs;</span>). 
+                            <strong>Puppet Stayman</strong><br>
+                            [cite_start]Asks for 5-card Major[cite: 54].
+                        </td>
+                        <td>
+                            <strong>3<span class="suit-d">♦</span></strong>: No 5M.<br>
+                            <strong>3M</strong>: 5-card Major.
                         </td>
                     </tr>
                     <tr>
-                        <td class="col-resp">4<span class="suit-c">&clubs;</span></td>
-                        <td><strong>Gerber</strong></td>
-                        <td>Ace Asking. [cite: 88]</td>
-                    </tr>
-                    <tr>
-                        <td class="col-resp"><span class="suit-d">4&diams;</span></td>
-                        <td><strong>Texas</strong></td>
+                        <td class="col-resp"><span class="suit-d">3♦</span></td>
                         <td>
-                            Transfer to <span class="suit-h">Hearts</span>. Sign off or RKC. [cite: 89]
+                            <strong>5-5 Minors</strong><br>
+                            [cite_start]Game Force[cite: 70].
+                        </td>
+                        <td>
+                            Opener sets strain.
                         </td>
                     </tr>
-                     <tr>
-                        <td class="col-resp"><span class="suit-h">4&hearts;</span></td>
-                        <td><strong>Texas</strong></td>
+                    <tr>
+                        <td class="col-resp"><span class="suit-h">3♥</span></td>
                         <td>
-                            Transfer to <span class="suit-s">Spades</span>. Sign off or RKC. [cite: 91]
+                            <strong>5-5 Majors</strong><br>
+                            [cite_start]Invitational[cite: 76].
                         </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="subheader-bar">Vs Interference</div>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr><th class="col-resp">Situation</th><th class="col-meaning">Agreement</th><th class="col-cont">Detail</th></tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="col-resp">Vs 2<span class="suit-c">&clubs;</span></td>
-                        <td><strong>Systems On</strong></td>
-                        <td><strong>Dbl</strong> = Stayman. Systems on. [cite: 509]</td>
-                    </tr>
-                    <tr>
-                        <td class="col-resp">Vs Suit</td>
-                        <td><strong>Lebensohl</strong></td>
                         <td>
-                            (Transfer Lebensohl variant implied by "Sep '25" update).<br>
-                            <strong>2NT</strong> = Puppet to 3<span class="suit-c">&clubs;</span>. [cite: 515]<br>
-                            <strong>Dbl (1-suiter)</strong> = Takeout. [cite: 512]<br>
-                            <strong>Dbl (2-suiter)</strong> = Penalty interest. [cite: 513]
+                            Pass or bid Game.
                         </td>
                     </tr>
                      <tr>
-                        <td class="col-resp">Vs Penalty X</td>
-                        <td><strong>Runouts</strong></td>
+                        <td class="col-resp">3<span class="suit-s">♠</span></td>
                         <td>
-                            <strong>Pass</strong> = Forces Rdbl (scramble). [cite: 483]<br>
-                            <strong>Rdbl</strong> = 5+ card suit (single suiter).<br>
-                            <strong>Suit Bid</strong> = Lower of 2 touching suits (4+). [cite: 484, 485]
+                            <strong>5-5 Majors</strong><br>
+                            [cite_start]Game Force[cite: 81].
+                        </td>
+                        <td>
+                            Opener sets strain.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-resp">4<span class="suit-c">♣</span></td>
+                        <td>
+                            <strong>Gerber</strong><br>
+                            [cite_start]Ace Asking[cite: 88].
+                        </td>
+                        <td>
+                            1430 Responses.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-resp"><span class="suit-d">4♦</span> / <span class="suit-h">4♥</span></td>
+                        <td>
+                            <strong>Texas Transfer</strong><br>
+                            [cite_start]Trf to <span class="suit-h">♥</span> / <span class="suit-s">♠</span>[cite: 89, 91].
+                        </td>
+                        <td>
+                            Sign off (No Slam Interest).
                         </td>
                     </tr>
                 </tbody>
