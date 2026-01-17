@@ -100,10 +100,15 @@ export const structure1NT = `
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                             <table class="nested-table" style="width: 100%;">
-                                <tr><td class="nested-key" style="width:55px;">3<span class="suit-c">♣</span></td><td class="nested-val"><strong>Forced.</strong> (Bad Diamonds/Weak Minors).</td></tr>
-                                <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">GF Diamonds (Over 3<span class="suit-c">♣</span>):</td></tr>
-                                <tr><td class="nested-key" style="width:55px;">3<span class="suit-d">♦</span></td><td class="nested-val"><strong>Natural.</strong> Good Diamonds (Inv+).</td></tr>
-                                <tr><td class="nested-key" style="width:55px;">3M/4<span class="suit-c">♣</span></td><td class="nested-val"><strong>Shortness.</strong> Strong Diamond suit.</td></tr>
+                                <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">Opener Rebid:</td></tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">3<span class="suit-c">♣</span></td>
+                                    <td class="nested-val"><strong>Bad Diamonds.</strong> (Worse than Qxx).<br>&rarr; Resp 3M/4<span class="suit-c">♣</span> = Shortness (GF).</td>
+                                </tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">3<span class="suit-d">♦</span></td>
+                                    <td class="nested-val"><strong>Good Diamonds.</strong> (Qxx+ or >Clubs).<br>&rarr; Resp 3M/4<span class="suit-c">♣</span> = Shortness (GF).</td>
+                                </tr>
                             </table>
                         </td>
                     </tr>
