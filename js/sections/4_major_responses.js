@@ -3,144 +3,213 @@ export const majorResponses = `
     <summary><span>Responses to 1<span class="suit-h">♥</span> / 1<span class="suit-s">♠</span></span></summary>
     <div class="content">
         
+        <div class="subheader-bar">Raises</div>
         <div class="table-wrapper">
             <table style="border-collapse: collapse; width: 100%;">
                 <thead>
                     <tr style="background-color: #f8fafc; border-bottom: 2px solid #e2e8f0;">
-                        <th style="width: 15%; padding: 12px; text-align: center; color: #64748b; font-weight: 700;">Bid</th>
-                        <th style="width: 35%; padding: 12px; text-align: left; color: #e53e3e; font-weight: 700; border-right: 1px solid #e2e8f0;">Over 1<span class="suit-h">♥</span></th>
-                        <th style="width: 35%; padding: 12px; text-align: left; color: #0369a1; font-weight: 700;">Over 1<span class="suit-s">♠</span></th>
+                        <th style="width: 15%; padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Bid</th>
+                        <th style="width: 25%; padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Meaning</th>
+                        <th style="padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Description</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #334155; padding: 14px; text-align: center; vertical-align: top;">1<span class="suit-s">♠</span></td>
-                        <td style="padding: 14px; vertical-align: top; border-right: 1px solid #e2e8f0;">
-                            <strong>Natural (F1).</strong><br>
-                            4+ Spades, 6+ HCP.
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">2M</td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Simple Raise</strong>
                         </td>
-                        <td style="padding: 14px; vertical-align: top; background-color: #f8fafc; color: #94a3b8;">
-                            <em>N/A</em>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>3 Trumps (6-9)</strong> OR <strong>4 Trumps (5-7).</strong><br>
+                            (Applies to 2<span class="suit-h">♥</span> over 1<span class="suit-h">♥</span>, and 2<span class="suit-s">♠</span> over 1<span class="suit-s">♠</span>).
                         </td>
                     </tr>
-
                     <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #334155; padding: 14px; text-align: center; vertical-align: top;">1NT</td>
-                        <td colspan="2" style="padding: 14px; vertical-align: top; background-color: #fff;">
-                            <strong>Semi-Forcing (6-12 HCP).</strong><br>
-                            <span style="font-size: 0.9em; color: #555;">Can include 3-card sub-minimum raise.</span><br>
-                            <div style="margin-top: 8px; padding: 8px; background-color: #f1f5f9; border-radius: 4px;">
-                                <strong>Opener's 2<span class="suit-c">♣</span> Rebid (17-19 check):</strong><br>
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">2NT</td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Jacoby 2NT</strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Forcing Limit+.</strong> 4+ Trumps.
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">3M</td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Jump Raise</strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Over 1<span class="suit-h">♥</span>: Mixed Raise.</strong> (7) 8-10 HCP.<br>
+                            <strong>Over 1<span class="suit-s">♠</span>: Limit Raise.</strong> 10-12 HCP.
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #d97706; padding: 14px; vertical-align: top;">
+                            Splinters
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Shortness (GF)</strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Over 1<span class="suit-h">♥</span>:</strong> 3<span class="suit-s">♠</span>, 4<span class="suit-c">♣</span>, 4<span class="suit-d">♦</span>.<br>
+                            <strong>Over 1<span class="suit-s">♠</span>:</strong> 4<span class="suit-c">♣</span>, 4<span class="suit-d">♦</span>, 4<span class="suit-h">♥</span>.<br>
+                            (12-14 HCP or 6 losers).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">3NT</td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Good 1-4</strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>13-15 HCP.</strong> 4 Trumps. 1 Outside Control.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="subheader-bar">1NT Semi-Forcing</div>
+        <div class="table-wrapper">
+            <table style="border-collapse: collapse; width: 100%;">
+                <thead>
+                    <tr style="background-color: #f8fafc; border-bottom: 2px solid #e2e8f0;">
+                        <th style="width: 15%; padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Bid</th>
+                        <th style="width: 25%; padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Meaning</th>
+                        <th style="padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">1NT</td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Semi-Forcing</strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>6 - 12 HCP.</strong> Can include 3-card sub-minimum raise.<br>
+                            <div style="margin-top: 6px; padding: 6px; background-color: #f0f9ff; border-radius: 4px;">
+                                <strong>Opener's 2<span class="suit-c">♣</span> Rebid (17+ check):</strong><br>
                                 Resp 2<span class="suit-s">♠</span> = Limit Raise in <span class="suit-c">♣</span>.<br>
                                 Resp 3<span class="suit-c">♣</span> = Courtesy Raise.
                             </div>
                         </td>
                     </tr>
+                </tbody>
+            </table>
+        </div>
 
-                    <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #334155; padding: 14px; text-align: center; vertical-align: top;">
-                            2<span class="suit-c">♣</span> / 2<span class="suit-d">♦</span>
-                        </td>
-                        <td colspan="2" style="padding: 14px; vertical-align: top;">
-                            <strong>Game Force (13+).</strong> Natural.<br>
-                            <span style="font-size:0.9em; color:#555;">(2<span class="suit-c">♣</span> is 2+ cards. 2<span class="suit-d">♦</span> is 5+ cards).</span>
-                        </td>
+        <div class="subheader-bar">2/1 Game Force</div>
+        <div class="table-wrapper">
+            <table style="border-collapse: collapse; width: 100%;">
+                <thead>
+                    <tr style="background-color: #f8fafc; border-bottom: 2px solid #e2e8f0;">
+                        <th style="width: 15%; padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Bid</th>
+                        <th style="width: 25%; padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Meaning</th>
+                        <th style="padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Description</th>
                     </tr>
-
+                </thead>
+                <tbody>
                     <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; text-align: center; vertical-align: top;">2<span class="suit-h">♥</span></td>
-                        <td style="padding: 14px; vertical-align: top; border-right: 1px solid #e2e8f0;">
-                            <strong>Simple Raise.</strong><br>
-                            3 Hts (6-9) or 4 Hts (5-7).
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">
+                            2<span class="suit-c">♣</span>
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            <strong>Game Force (13+).</strong><br>
-                            5+ Hearts. Natural.
-                        </td>
-                    </tr>
-
-                    <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; text-align: center; vertical-align: top;">2<span class="suit-s">♠</span></td>
-                        <td style="padding: 14px; vertical-align: top; border-right: 1px solid #e2e8f0;">
-                            <strong>Weak Jump Shift.</strong><br>
-                            6+ Spades, 0-2 Hearts. (5-9).
+                            <strong>Game Force</strong>
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            <strong>Simple Raise.</strong><br>
-                            3 Sps (6-9) or 4 Sps (5-7).
+                            <strong>2+ Clubs.</strong> 13+ HCP.<br>
+                            (May have 4<span class="suit-s">♠</span> over 1<span class="suit-h">♥</span> even if short <span class="suit-c">♣</span>).
                         </td>
                     </tr>
-
                     <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #334155; padding: 14px; text-align: center; vertical-align: top;">2NT</td>
-                        <td colspan="2" style="padding: 14px; vertical-align: top;">
-                            <strong>Jacoby 2NT.</strong> Forcing Limit+ Raise (4+ Trumps).
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #d97706; padding: 14px; vertical-align: top;">
+                            2<span class="suit-d">♦</span>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Game Force</strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>5+ Diamonds.</strong> 13+ HCP.
                         </td>
                     </tr>
+                    <tr>
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; vertical-align: top;">
+                            2<span class="suit-h">♥</span>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Game Force</strong><br>
+                            (Over 1<span class="suit-s">♠</span>)
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>5+ Hearts.</strong> 13+ HCP. Natural.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+        <div class="subheader-bar">Other Responses</div>
+        <div class="table-wrapper">
+             <table style="border-collapse: collapse; width: 100%;">
+                <thead>
+                    <tr style="background-color: #f8fafc; border-bottom: 2px solid #e2e8f0;">
+                        <th style="width: 15%; padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Bid</th>
+                        <th style="width: 25%; padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Meaning</th>
+                        <th style="padding: 12px; text-align: left; color: #64748b; font-weight: 700;">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
                     <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #334155; padding: 14px; text-align: center; vertical-align: top;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">1<span class="suit-s">♠</span></td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Natural</strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            (Over 1<span class="suit-h">♥</span>). 4+ Spades. F1.<br>
+                            (If GF, denies longer suit).
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">2<span class="suit-s">♠</span></td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Weak Jump</strong>
+                        </td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            (Over 1<span class="suit-h">♥</span>). 6+ Spades. 5-9 HCP.<br>
+                            (0-2 Hearts).
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">
                             3<span class="suit-c">♣</span> / 3<span class="suit-d">♦</span>
                         </td>
-                        <td colspan="2" style="padding: 14px; vertical-align: top;">
-                            <strong>Invitational (10-12).</strong> 6+ Suit.<br>
-                            Denies 4 cards in the other Major.
-                        </td>
-                    </tr>
-
-                    <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; text-align: center; vertical-align: top;">3<span class="suit-h">♥</span></td>
-                        <td style="padding: 14px; vertical-align: top; border-right: 1px solid #e2e8f0;">
-                            <strong>Mixed Raise.</strong><br>
-                            (7) 8-10 HCP. 4+ Hearts.
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Invitational</strong>
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            <strong>Invitational (10-12).</strong><br>
-                            6+ Hearts.
+                            <strong>6+ Suit.</strong> 10-12 HCP.<br>
+                            Denies 4 cards in other Major.
                         </td>
                     </tr>
-
                     <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; text-align: center; vertical-align: top;">3<span class="suit-s">♠</span></td>
-                        <td style="padding: 14px; vertical-align: top; border-right: 1px solid #e2e8f0;">
-                            <strong>Splinter (GF).</strong><br>
-                            Shortness (<span class="suit-s">♠</span>). Min GF strength.
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; vertical-align: top;">3<span class="suit-h">♥</span></td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Invitational</strong><br>
+                            (Over 1<span class="suit-s">♠</span>)
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            <strong>Limit Raise.</strong><br>
-                            10-12 HCP. 4+ Spades.
+                            <strong>6+ Hearts.</strong> 10-12 HCP.
                         </td>
                     </tr>
-
-                    <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #334155; padding: 14px; text-align: center; vertical-align: top;">3NT</td>
-                        <td colspan="2" style="padding: 14px; vertical-align: top;">
-                            <strong>Good 1-4.</strong> (13-15 HCP).<br>
-                            4 Trumps, 1 Outside Control.
-                        </td>
-                    </tr>
-
-                    <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #334155; padding: 14px; text-align: center; vertical-align: top;">
-                            4<span class="suit-c">♣</span> / 4<span class="suit-d">♦</span>
-                        </td>
-                        <td colspan="2" style="padding: 14px; vertical-align: top;">
-                            <strong>Splinter.</strong> Singleton or Void.
-                        </td>
-                    </tr>
-                    
-                    <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; text-align: center; vertical-align: top;">4<span class="suit-h">♥</span></td>
-                        <td style="padding: 14px; vertical-align: top; border-right: 1px solid #e2e8f0;">
-                            <strong>Preempt.</strong><br>
-                            Weak.
+                    <tr>
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">4M</td>
+                        <td style="padding: 14px; vertical-align: top;">
+                            <strong>Preemptive</strong>
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            <strong>Splinter.</strong><br>
-                            Singleton/Void (<span class="suit-h">♥</span>).
+                            (Applies to 4<span class="suit-h">♥</span> over 1<span class="suit-h">♥</span>, and 4<span class="suit-s">♠</span> over 1<span class="suit-s">♠</span>).
                         </td>
                     </tr>
-
                 </tbody>
             </table>
         </div>
