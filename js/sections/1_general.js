@@ -2,17 +2,39 @@ export const generalAgreements = `
 <details>
     <summary><span>General Agreements</span></summary>
     <div class="content">
-        <div class="badge-block">
-            <div class="badge-label">Carding</div>
-            <div class="badge-desc">Upside Down Count & Attitude.</div>
-        </div>
-        <div class="badge-block">
-            <div class="badge-label">Leads</div>
-            <div class="badge-desc">Vs NT: 4th Best. Vs Suit: 3rd from Even, Low from Odd.</div>
-        </div>
-        <div class="badge-block">
-            <div class="badge-label">Comp Doubles</div>
-            <div class="badge-desc">Support (thru 2<span class="suit-s">♠</span>), Negative (thru 7<span class="suit-h">♥</span>).</div>
+        
+        <div style="display: flex; gap: 15px; margin-bottom: 5px;">
+            
+            <div style="flex: 1 1 0px; width: 0; background-color: #f0f9ff; border-left: 5px solid #0369a1; padding: 12px; border-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                <div style="font-weight: 800; color: #0369a1; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">
+                    Style
+                </div>
+                <div style="font-size: 0.95em; color: #334155; line-height: 1.4;">
+                    <strong>5-Card Majors.</strong><br>
+                    10+ HCP (Rule of 20).
+                </div>
+            </div>
+
+            <div style="flex: 1 1 0px; width: 0; background-color: #f0f9ff; border-left: 5px solid #0369a1; padding: 12px; border-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                <div style="font-weight: 800; color: #0369a1; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">
+                    1NT Response
+                </div>
+                <div style="font-size: 0.95em; color: #334155; line-height: 1.4;">
+                    <strong>Semi-Forcing.</strong><br>
+                    6 - 12 HCP.
+                </div>
+            </div>
+
+            <div style="flex: 1 1 0px; width: 0; background-color: #f0f9ff; border-left: 5px solid #0369a1; padding: 12px; border-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                <div style="font-weight: 800; color: #0369a1; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">
+                    2/1 Response
+                </div>
+                <div style="font-size: 0.95em; color: #334155; line-height: 1.4;">
+                    <strong>Game Forcing.</strong><br>
+                    100% Force.
+                </div>
+            </div>
+
         </div>
     </div>
 </details>
