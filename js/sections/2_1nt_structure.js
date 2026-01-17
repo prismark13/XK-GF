@@ -6,9 +6,9 @@ export const structure1NT = `
             <table>
                 <thead>
                     <tr>
-                        <th class="col-resp">Bid</th>
-                        <th class="col-meaning">Meaning</th>
-                        <th class="col-cont">Continuations</th>
+                        <th style="width: 15%">Bid</th>
+                        <th style="width: 25%">Meaning</th>
+                        <th>Continuations</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -16,117 +16,172 @@ export const structure1NT = `
                         <td class="col-resp">2<span class="suit-c">♣</span></td>
                         <td>
                             <strong>Stayman</strong><br>
-                            [cite_start]Promises 4+ Major[cite: 36].
+                            Promises 4+ card Major.
                         </td>
                         <td>
-                            <strong>2<span class="suit-d">♦</span></strong>: No Major. (Resp: 3M Smolen, 2NT Inv).<br>
-                            <strong>2M</strong>: 4-card Major.
+                            <table class="nested-table">
+                                <tr><td class="nested-key">2<span class="suit-d">♦</span></td><td class="nested-val"><strong>No Major.</strong></td></tr>
+                                <tr><td class="nested-key">2M</td><td class="nested-val"><strong>4-card Major.</strong></td></tr>
+                                <tr><td class="nested-key">3M</td><td class="nested-val"><strong>Smolen.</strong> (After 2<span class="suit-d">♦</span>). 5oM + 4M, GF.</td></tr>
+                            </table>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-resp"><span class="suit-d">2♦</span></td>
                         <td>
                             <strong>Jacoby Transfer</strong><br>
-                            [cite_start]5+ <span class="suit-h">Hearts</span>[cite: 37].
+                            Shows 5+ <span class="suit-h">Hearts</span>.
                         </td>
                         <td>
-                            <strong>2<span class="suit-h">♥</span></strong>: Normal accept.<br>
-                            [cite_start]<strong>3<span class="suit-h">♥</span></strong>: Super accept (Max + 4-card fit)[cite: 39].
+                            <table class="nested-table">
+                                <tr><td class="nested-key">2<span class="suit-h">♥</span></td><td class="nested-val"><strong>Accept.</strong> Min or Max (no fit).</td></tr>
+                                <tr><td class="nested-key">3<span class="suit-h">♥</span></td><td class="nested-val"><strong>Super Accept.</strong> Max + 4-card fit.</td></tr>
+                                <tr><td class="nested-key">2<span class="suit-s">♠</span></td><td class="nested-val"><strong>Super Accept.</strong> Max + 4-card fit.</td></tr>
+                            </table>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-resp"><span class="suit-h">2♥</span></td>
                         <td>
                             <strong>Jacoby Transfer</strong><br>
-                            [cite_start]5+ <span class="suit-s">Spades</span>[cite: 40].
+                            Shows 5+ <span class="suit-s">Spades</span>.
                         </td>
                         <td>
-                            <strong>2<span class="suit-s">♠</span></strong>: Normal accept.<br>
-                            [cite_start]<strong>3<span class="suit-s">♠</span></strong>: Super accept (Max + 4-card fit)[cite: 42].
+                            <table class="nested-table">
+                                <tr><td class="nested-key">2<span class="suit-s">♠</span></td><td class="nested-val"><strong>Accept.</strong> Min or Max (no fit).</td></tr>
+                                <tr><td class="nested-key">3<span class="suit-s">♠</span></td><td class="nested-val"><strong>Super Accept.</strong> Max + 4-card fit.</td></tr>
+                                <tr><td class="nested-key">3<span class="suit-h">♥</span></td><td class="nested-val"><strong>Super Accept.</strong> Max + 4-card fit.</td></tr>
+                            </table>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-resp">2<span class="suit-s">♠</span></td>
                         <td>
                             <strong>Range Ask / Clubs</strong><br>
-                            [cite_start]Bal Inv <em>OR</em> Club 1-suiter[cite: 43].
+                            Bal Inv <em>OR</em> Club 1-suiter.
                         </td>
                         <td>
-                            <strong>2NT</strong>: Minimum.<br>
-                            [cite_start]<strong>3<span class="suit-c">♣</span></strong>: Maximum[cite: 44, 45].
+                            <table class="nested-table">
+                                <tr><td class="nested-key">2NT</td><td class="nested-val"><strong>Minimum.</strong></td></tr>
+                                <tr><td class="nested-key">3<span class="suit-c">♣</span></td><td class="nested-val"><strong>Maximum.</strong></td></tr>
+                            </table>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-resp">2NT</td>
                         <td>
                             <strong>Diamonds</strong><br>
-                            [cite_start]Weak or Strong 1-suiter[cite: 49].
+                            1-suiter (Weak or Strong) OR Both Minors Weak.
                         </td>
                         <td>
-                            <strong>3<span class="suit-c">♣</span></strong>: Forced (Bad Diamonds).<br>
-                            [cite_start]<strong>3<span class="suit-d">♦</span></strong>: Competitive (Good Diamonds)[cite: 50, 52].
+                            <table class="nested-table">
+                                <tr><td class="nested-key">3<span class="suit-c">♣</span></td><td class="nested-val"><strong>Forced.</strong> (Bad Diamonds).</td></tr>
+                                <tr><td class="nested-key">3<span class="suit-d">♦</span></td><td class="nested-val"><strong>Competitive.</strong> (Good Diamonds).</td></tr>
+                            </table>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-resp">3<span class="suit-c">♣</span></td>
                         <td>
                             <strong>Puppet Stayman</strong><br>
-                            [cite_start]Asks for 5-card Major[cite: 54].
+                            Asks for 5-card Major.
                         </td>
                         <td>
-                            <strong>3<span class="suit-d">♦</span></strong>: No 5M.<br>
-                            <strong>3M</strong>: 5-card Major.
+                            <table class="nested-table">
+                                <tr><td class="nested-key">3<span class="suit-d">♦</span></td><td class="nested-val"><strong>No 5-card Major.</strong></td></tr>
+                                <tr><td class="nested-key">3M</td><td class="nested-val"><strong>5-card Major.</strong></td></tr>
+                            </table>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-resp"><span class="suit-d">3♦</span></td>
                         <td>
                             <strong>5-5 Minors</strong><br>
-                            [cite_start]Game Force[cite: 70].
+                            Game Forcing.
                         </td>
                         <td>
-                            Opener sets strain.
+                            <table class="nested-table">
+                                <tr><td class="nested-key">3M</td><td class="nested-val"><strong>Stopper.</strong></td></tr>
+                                <tr><td class="nested-key">4m</td><td class="nested-val"><strong>Set Suit.</strong></td></tr>
+                            </table>
                         </td>
                     </tr>
-                    <tr>
+                     <tr>
                         <td class="col-resp"><span class="suit-h">3♥</span></td>
                         <td>
                             <strong>5-5 Majors</strong><br>
-                            [cite_start]Invitational[cite: 76].
+                            Invitational.
                         </td>
                         <td>
-                            Pass or bid Game.
+                           <table class="nested-table">
+                                <tr><td class="nested-key">Pass</td><td class="nested-val"><strong>To Play.</strong></td></tr>
+                                <tr><td class="nested-key">4M</td><td class="nested-val"><strong>To Play.</strong></td></tr>
+                            </table>
                         </td>
                     </tr>
                      <tr>
                         <td class="col-resp">3<span class="suit-s">♠</span></td>
                         <td>
                             <strong>5-5 Majors</strong><br>
-                            [cite_start]Game Force[cite: 81].
+                            Game Forcing.
                         </td>
                         <td>
-                            Opener sets strain.
+                            <table class="nested-table">
+                                <tr><td class="nested-key">4M</td><td class="nested-val"><strong>To Play.</strong></td></tr>
+                                <tr><td class="nested-key">Cue</td><td class="nested-val"><strong>Slam Try.</strong></td></tr>
+                            </table>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-resp">4<span class="suit-c">♣</span></td>
                         <td>
                             <strong>Gerber</strong><br>
-                            [cite_start]Ace Asking[cite: 88].
+                            Ace Asking.
                         </td>
                         <td>
-                            1430 Responses.
+                             <table class="nested-table">
+                                <tr><td class="nested-key">4<span class="suit-d">♦</span></td><td class="nested-val"><strong>0 or 4.</strong></td></tr>
+                                <tr><td class="nested-key">4<span class="suit-h">♥</span></td><td class="nested-val"><strong>1.</strong></td></tr>
+                            </table>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-resp"><span class="suit-d">4♦</span> / <span class="suit-h">4♥</span></td>
                         <td>
                             <strong>Texas Transfer</strong><br>
-                            [cite_start]Trf to <span class="suit-h">♥</span> / <span class="suit-s">♠</span>[cite: 89, 91].
+                            Transfer to <span class="suit-h">♥</span> / <span class="suit-s">♠</span>.
                         </td>
                         <td>
-                            Sign off (No Slam Interest).
+                             <table class="nested-table">
+                                <tr><td class="nested-key">Step</td><td class="nested-val"><strong>Sign Off.</strong> No Slam Interest.</td></tr>
+                            </table>
                         </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="subheader-bar">Vs Interference</div>
+        <div class="table-wrapper">
+             <table>
+                <thead>
+                    <tr><th style="width: 20%">Context</th><th style="width: 20%">Our Call</th><th>Meaning</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vs 2<span class="suit-c">♣</span></td>
+                        <td><strong>Double</strong></td>
+                        <td><strong>Stayman.</strong> Systems On.</td>
+                    </tr>
+                    <tr>
+                        <td>Vs Suit</td>
+                        <td><strong>2NT</strong></td>
+                        <td><strong>Lebensohl.</strong> Relay to 3<span class="suit-c">♣</span>. (Weak or GF w/ Stop).</td>
+                    </tr>
+                    <tr>
+                        <td>Vs Suit</td>
+                        <td><strong>Double</strong></td>
+                        <td><strong>Negative.</strong> Takeout (4+ oM).</td>
                     </tr>
                 </tbody>
             </table>
