@@ -32,41 +32,31 @@ export const structure1NT = `
                             </table>
                         </td>
                     </tr>
+                    
                     <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; vertical-align: top;"><span class="suit-d">2♦</span></td>
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; vertical-align: top;">
+                            <span class="suit-d">2♦</span> / <span class="suit-h">2♥</span>
+                        </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            <strong>Jacoby Transfer</strong><br>
-                            Shows 5+ <span class="suit-h">Hearts</span>.
+                            <strong>Jacoby Transfers</strong><br>
+                            Transfer to <span class="suit-h">♥</span> / <span class="suit-s">♠</span>.
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
                             <table class="nested-table" style="width: 100%;">
                                 <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">Opener Rebid:</td></tr>
-                                <tr><td class="nested-key">2<span class="suit-h">♥</span></td><td class="nested-val"><strong>Accept.</strong> Min or Max (no fit).</td></tr>
-                                <tr><td class="nested-key">3<span class="suit-h">♥</span></td><td class="nested-val"><strong>Super Accept.</strong> Max + 4-card fit.</td></tr>
-                                
-                                <tr style="background-color:#f1f5f9;"><td colspan="2" style="font-weight:700; color:#475569; padding-top:6px; padding-bottom:4px;">Over 2<span class="suit-h">♥</span>:</td></tr>
-                                <tr><td class="nested-key">2<span class="suit-s">♠</span></td><td class="nested-val"><strong>5+<span class="suit-s">♠</span> 5+<span class="suit-h">♥</span>.</strong> Force 1 round (Inv+).</td></tr>
+                                <tr><td class="nested-key">2M</td><td class="nested-val"><strong>Accept.</strong> Min or Max (no fit).</td></tr>
+                                <tr><td class="nested-key">3M</td><td class="nested-val"><strong>Super Accept.</strong> Max + 4-card fit.</td></tr>
+
+                                <tr style="background-color:#f1f5f9;"><td colspan="2" style="font-weight:700; color:#475569; padding-top:6px; padding-bottom:4px;">Responder (Over 2M):</td></tr>
                                 <tr><td class="nested-key">2NT</td><td class="nested-val"><strong>Invitational.</strong> Balanced.</td></tr>
-                                <tr><td class="nested-key">3m</td><td class="nested-val"><strong>Natural.</strong> Game Forcing.</td></tr>
-                                <tr><td class="nested-key">3<span class="suit-h">♥</span></td><td class="nested-val"><strong>Invitational.</strong> 6+ Hearts.</td></tr>
-                                <tr><td class="nested-key">3<span class="suit-s">♠</span></td><td class="nested-val"><strong>Splinter.</strong> Singleton Spades, GF.</td></tr>
-                                <tr><td class="nested-key">4m</td><td class="nested-val"><strong>Splinter.</strong> Singleton Minor, GF.</td></tr>
+                                <tr><td class="nested-key">3M</td><td class="nested-val"><strong>Invitational.</strong> 6+ cards.</td></tr>
+                                <tr><td class="nested-key">New M</td><td class="nested-val"><strong>5-5 Majors.</strong> (2<span class="suit-s">♠</span> Inv+, 3<span class="suit-h">♥</span> GF).</td></tr>
+                                <tr><td class="nested-key">New m</td><td class="nested-val"><strong>Natural.</strong> Game Forcing.</td></tr>
+                                <tr><td class="nested-key">Splinter</td><td class="nested-val"><strong>Shortness.</strong> Game Forcing.</td></tr>
                             </table>
                         </td>
                     </tr>
-                    <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; vertical-align: top;"><span class="suit-h">2♥</span></td>
-                        <td style="padding: 14px; vertical-align: top;">
-                            <strong>Jacoby Transfer</strong><br>
-                            Shows 5+ <span class="suit-s">Spades</span>.
-                        </td>
-                        <td style="padding: 14px; vertical-align: top;">
-                            <table class="nested-table" style="width: 100%;">
-                                <tr><td class="nested-key">2<span class="suit-s">♠</span></td><td class="nested-val"><strong>Accept.</strong> Min or Max (no fit).</td></tr>
-                                <tr><td class="nested-key">3<span class="suit-s">♠</span></td><td class="nested-val"><strong>Super Accept.</strong> Max + 4-card fit.</td></tr>
-                            </table>
-                        </td>
-                    </tr>
+
                     <tr style="border-bottom: 2px solid #e2e8f0;">
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">2<span class="suit-s">♠</span></td>
                         <td style="padding: 14px; vertical-align: top;">
@@ -83,6 +73,7 @@ export const structure1NT = `
                             </table>
                         </td>
                     </tr>
+                    
                     <tr style="border-bottom: 2px solid #e2e8f0;">
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">2NT</td>
                         <td style="padding: 14px; vertical-align: top;">
@@ -98,6 +89,7 @@ export const structure1NT = `
                             </table>
                         </td>
                     </tr>
+                    
                     <tr style="border-bottom: 2px solid #e2e8f0;">
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">3<span class="suit-c">♣</span></td>
                         <td style="padding: 14px; vertical-align: top;">
@@ -119,6 +111,7 @@ export const structure1NT = `
                             </table>
                         </td>
                     </tr>
+                    
                     <tr style="border-bottom: 2px solid #e2e8f0;">
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #d97706; padding: 14px; vertical-align: top;"><span class="suit-d">3♦</span></td>
                         <td style="padding: 14px; vertical-align: top;">
@@ -132,6 +125,7 @@ export const structure1NT = `
                             </table>
                         </td>
                     </tr>
+                    
                      <tr style="border-bottom: 2px solid #e2e8f0;">
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; vertical-align: top;"><span class="suit-h">3♥</span></td>
                         <td style="padding: 14px; vertical-align: top;">
@@ -145,6 +139,7 @@ export const structure1NT = `
                             </table>
                         </td>
                     </tr>
+                    
                      <tr style="border-bottom: 2px solid #e2e8f0;">
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">3<span class="suit-s">♠</span></td>
                         <td style="padding: 14px; vertical-align: top;">
@@ -157,6 +152,7 @@ export const structure1NT = `
                             </table>
                         </td>
                     </tr>
+                    
                     <tr style="border-bottom: 2px solid #e2e8f0;">
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">4<span class="suit-c">♣</span></td>
                         <td style="padding: 14px; vertical-align: top;">
@@ -176,6 +172,7 @@ export const structure1NT = `
                             </table>
                         </td>
                     </tr>
+                    
                     <tr style="border-bottom: 2px solid #e2e8f0;">
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #e53e3e; padding: 14px; vertical-align: top;"><span class="suit-d">4♦</span> / <span class="suit-h">4♥</span></td>
                         <td style="padding: 14px; vertical-align: top;">
@@ -188,6 +185,7 @@ export const structure1NT = `
                             </table>
                         </td>
                     </tr>
+                    
                     <tr>
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">4NT</td>
                         <td style="padding: 14px; vertical-align: top;">
