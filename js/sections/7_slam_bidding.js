@@ -1,5 +1,5 @@
 export const slamBidding = `
-<details>
+<details class="cat-minor">
     <summary><span>Slam Bidding & RKC</span></summary>
     <div class="content">
         

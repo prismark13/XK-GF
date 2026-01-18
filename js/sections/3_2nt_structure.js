@@ -1,5 +1,5 @@
 export const structure2NT = `
-<details>
+<details class="cat-nt">
     <summary><span>2NT Structure (20 - 21)</span></summary>
     <div class="content">
         <div class="table-wrapper">

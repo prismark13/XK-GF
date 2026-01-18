@@ -1,5 +1,5 @@
 export const clubOpening = `
-<details>
+<details class="cat-minor">
     <summary><span>2<span class="suit-c">♣</span> Strong Opening</span></summary>
     <div class="content">
         

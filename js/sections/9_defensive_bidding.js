@@ -1,5 +1,5 @@
 export const defensiveBidding = `
-<details>
+<details class="cat-defense">
     <summary><span>Defensive Bidding</span></summary>
     <div class="content">
         

@@ -1,5 +1,5 @@
 export const carding = `
-<details>
+<details class="cat-defense">
     <summary><span>Leads & Signals</span></summary>
     <div class="content">
         

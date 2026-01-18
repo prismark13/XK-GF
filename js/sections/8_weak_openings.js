@@ -1,5 +1,5 @@
 export const weakBids = `
-<details>
+<details class="cat-minor">
     <summary><span>Weak Bids & Jump Shifts</span></summary>
     <div class="content">
         

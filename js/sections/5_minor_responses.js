@@ -1,5 +1,5 @@
 export const minorResponses = `
-<details>
+<details class="cat-major">
     <summary><span>Responses to 1<span class="suit-c">♣</span> / 1<span class="suit-d">♦</span></span></summary>
     <div class="content">
         
