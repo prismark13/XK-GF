@@ -1,6 +1,6 @@
 export const defensiveBidding = `
 <details>
-    <summary><span>Defensive Bidding (They Open)</span></summary>
+    <summary><span>Defensive Bidding</span></summary>
     <div class="content">
         
         <div class="subheader-bar">Direct Cuebids & Unusual NT</div>
@@ -99,19 +99,32 @@ export const defensiveBidding = `
         <div class="subheader-bar">Defense vs Special Openings</div>
         <div class="table-wrapper">
             <table style="border-collapse: collapse; width: 100%;">
+                <thead>
+                    <tr style="background-color: #f8fafc; border-bottom: 2px solid #e2e8f0;">
+                        <th style="width: 25%; padding: 12px; text-align: left; color: #64748b;">Opponent</th>
+                        <th style="padding: 12px; text-align: left; color: #64748b;">Our Defense</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="width: 25%; font-weight: 700; color: #334155; padding: 12px;">vs Strong NT (Woolsey)</td>
+                        <td class="col-resp" style="font-weight: 700; color: #334155; padding: 12px;">
+                            vs Strong NT<br>
+                            <span style="font-weight:normal; font-size:0.9em; color:#555;">(Woolsey)</span>
+                        </td>
                         <td style="padding: 12px;">
-                            <strong>Dbl:</strong> 4M + Longer m <strong>OR</strong> Strong.<br>
-                            <strong>2<span class="suit-c">♣</span>:</strong> Majors.<br>
+                            <strong>Dbl:</strong> 4M + Longer m <strong>OR</strong> Strong (5+ or 5-5).<br>
+                            <strong>2<span class="suit-c">♣</span>:</strong> Majors (5-4+).<br>
                             <strong>2<span class="suit-d">♦</span>:</strong> One Major (6+).<br>
-                            <strong>2M:</strong> 5M + 4+m.<br>
+                            <strong>2<span class="suit-h">♥</span>:</strong> 5 <span class="suit-h">♥</span> + 4+ m.<br>
+                            <strong>2<span class="suit-s">♠</span>:</strong> 5 <span class="suit-s">♠</span> + 4+ m.<br>
                             <strong>2NT:</strong> Minors.
                         </td>
                     </tr>
+
                     <tr style="border-bottom: 2px solid #e2e8f0;">
-                        <td class="col-resp" style="font-weight: 700; color: #334155; padding: 12px;">vs Strong 1<span class="suit-c">♣</span></td>
+                        <td class="col-resp" style="font-weight: 700; color: #334155; padding: 12px;">
+                            vs Strong 1<span class="suit-c">♣</span>
+                        </td>
                         <td style="padding: 12px;">
                             <strong>Dbl:</strong> Majors.<br>
                             <strong>1NT:</strong> Minors.<br>

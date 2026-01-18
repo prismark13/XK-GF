@@ -1,6 +1,6 @@
 export const competitiveResponses = `
 <details>
-    <summary><span>Competitive Bidding (We Open)</span></summary>
+    <summary><span>Competitive Bidding</span></summary>
     <div class="content">
         
         <div class="subheader-bar">Defense to Michaels / Unusual</div>
