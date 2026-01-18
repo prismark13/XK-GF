@@ -1,26 +1,30 @@
+/* --- IMPORTS --- */
+/* Import 'Inter' font for a premium, modern app feel */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+
 /* --- VARIABLES --- */
 :root {
-    --bg-body: #f8fafc;        /* Very light slate */
+    --bg-body: #f3f6f9;        /* Slightly cooler gray */
     --bg-card: #ffffff;
-    --text-main: #1e293b;      /* Dark slate */
-    --text-muted: #64748b;     /* Medium gray */
-    --primary: #2563eb;        /* Vibrant Blue */
-    --primary-light: #eff6ff;  /* Light Blue bg */
+    --text-main: #1e293b;      /* Slate 800 */
+    --text-muted: #64748b;     /* Slate 500 */
+    --primary: #2563eb;        /* Blue 600 */
+    --primary-gradient: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%); /* Blue to Indigo */
     --border: #e2e8f0;
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --radius: 12px;
+    --radius: 16px;            /* More rounded */
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
 }
 
-/* --- RESET & BASE --- */
+/* --- BASE --- */
 * { box-sizing: border-box; }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Inter', sans-serif; /* The biggest change */
     background-color: var(--bg-body);
     color: var(--text-main);
     margin: 0;
-    padding: 20px;
+    padding: 40px 20px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
@@ -28,209 +32,215 @@ body {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 
-/* --- HEADER --- */
+/* --- PREMIUM HEADER --- */
 h1 {
     text-align: center;
-    color: #0f172a;
-    margin: 10px 0 5px 0;
+    margin: 0 0 10px 0;
     font-weight: 800;
-    font-size: 2.5rem;
-    letter-spacing: -0.03em;
+    font-size: 3rem;
+    letter-spacing: -0.04em;
+    
+    /* Gradient Text Effect */
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    width: 100%;
 }
 
 .subtitle {
     text-align: center;
     color: var(--text-muted);
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     font-weight: 500;
     font-size: 1.1rem;
+    letter-spacing: -0.01em;
 }
 
-/* --- STICKY SEARCH BOX --- */
+/* --- FLOATING SEARCH BAR --- */
 .search-container {
     position: sticky;
     top: 20px;
     z-index: 100;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 #search-box {
     width: 100%;
-    padding: 18px 24px;
+    padding: 20px 28px;
     font-size: 1.1rem;
-    border: 1px solid rgba(255,255,255,0.5);
-    background: rgba(255, 255, 255, 0.9);
+    font-family: 'Inter', sans-serif;
+    border: 1px solid rgba(255,255,255,0.6);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
-    border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 50px; /* Full Pill Shape */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
     outline: none;
-    transition: all 0.2s ease;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--text-main);
 }
 
 #search-box:focus {
-    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
-    border-color: var(--primary);
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.15);
+    border-color: rgba(37, 99, 235, 0.3);
 }
 
-/* --- ACCORDION (DETAILS) --- */
+#search-box::placeholder { color: #94a3b8; font-weight: 400; }
+
+/* --- CARDS (DETAILS) --- */
 details {
     background-color: var(--bg-card);
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     border-radius: var(--radius);
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow-sm);
+    border: 1px solid #fff; /* White border for crispness */
+    box-shadow: var(--shadow-soft);
     overflow: hidden;
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 details:hover {
-    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
 }
 
 details[open] {
-    box-shadow: var(--shadow-md);
-    border-color: #bfdbfe;
+    box-shadow: var(--shadow-hover);
+    border-color: #e0e7ff; /* Faint purple/blue border */
 }
 
 summary {
     cursor: pointer;
-    padding: 20px 24px;
+    padding: 24px 32px;
     font-weight: 700;
-    font-size: 1.15rem;
-    color: #334155;
+    font-size: 1.2rem;
+    color: var(--text-main);
     background-color: var(--bg-card);
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    transition: background 0.15s;
+    letter-spacing: -0.02em;
 }
 
 summary::-webkit-details-marker { display: none; }
 
-summary:hover {
-    background-color: #f8fafc;
-    color: #0f172a;
-}
-
+/* Custom Gradient Icon */
 summary::after {
     content: '+';
-    font-size: 1.5rem;
-    color: #94a3b8;
+    font-size: 1.8rem;
+    color: #cbd5e1;
     font-weight: 300;
     line-height: 1;
-    margin-left: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 details[open] summary::after {
     content: '−';
-    color: var(--primary);
-    font-weight: 500;
+    color: #4f46e5;
+    transform: rotate(180deg); /* Subtle spin animation */
 }
 
 details[open] summary {
     border-bottom: 1px solid var(--border);
-    background-color: #f8fafc;
-    color: var(--primary);
 }
 
-/* --- CONTENT --- */
+/* --- CONTENT AREA --- */
 .content {
-    animation: slideDown 0.3s ease-out;
+    animation: fadeIn 0.4s ease;
 }
 
-@keyframes slideDown {
-    from { opacity: 0; transform: translateY(-10px); }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-8px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
 .subheader-bar {
-    background-color: #f1f5f9;
-    color: #475569;
-    padding: 12px 24px;
-    font-size: 0.8rem;
+    background-color: #f8fafc;
+    color: #64748b;
+    padding: 12px 32px;
+    font-size: 0.75rem;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     border-bottom: 1px solid var(--border);
 }
 
 /* --- TABLES --- */
-.table-wrapper {
-    overflow-x: auto;
-}
+.table-wrapper { overflow-x: auto; }
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate; /* Allows border radius on rows if needed */
+    border-spacing: 0;
     font-size: 0.95rem;
 }
 
 th {
     text-align: left;
-    padding: 16px 24px;
-    color: #64748b;
+    padding: 16px 32px;
+    color: #475569;
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    border-bottom: 2px solid var(--border);
-    background-color: #fff;
+    background-color: #f9fafb; /* Subtle background for headers */
+    border-bottom: 1px solid var(--border);
     white-space: nowrap;
 }
 
 td {
-    padding: 16px 24px;
+    padding: 18px 32px;
     border-bottom: 1px solid #f1f5f9;
     vertical-align: top;
     color: #334155;
+    transition: background-color 0.2s;
 }
 
 tr:last-child td { border-bottom: none; }
 
-tbody tr:nth-child(even) { background-color: #fafbfc; }
-tbody tr:hover { background-color: #eff6ff; }
+/* Row Hover Effect */
+tbody tr:hover td {
+    background-color: #f8fafc;
+}
 
+/* Bid Column Styling */
 td:first-child {
-    font-weight: 600;
+    font-weight: 700;
     color: #0f172a;
-    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
-    font-size: 1rem;
+    font-family: 'Inter', sans-serif; /* Keep consistent font, just bolder */
+    min-width: 120px;
 }
 
 /* --- SUITS --- */
-.suit-c { color: #15803d; font-weight: bold; }
-.suit-d { color: #d97706; font-weight: bold; }
-.suit-h { color: #dc2626; font-weight: bold; }
-.suit-s { color: #0f172a; font-weight: bold; }
+.suit-c { color: #16a34a; font-weight: 700; }
+.suit-d { color: #d97706; font-weight: 700; }
+.suit-h { color: #dc2626; font-weight: 700; }
+.suit-s { color: #0f172a; font-weight: 700; }
 
 /* --- NESTED TABLES --- */
-.nested-table { margin-top: 8px; }
+.nested-table { margin-top: 10px; }
 .nested-table td {
     padding: 6px 0;
     border: none;
     background: transparent !important;
-    font-family: inherit;
     font-size: 0.9rem;
 }
 .nested-key {
     width: 1%;
     white-space: nowrap;
-    padding-right: 15px !important;
+    padding-right: 20px !important;
     color: #64748b;
     font-weight: 500;
 }
 
-/* --- RESPONSIVE --- */
+/* --- MOBILE --- */
 @media (max-width: 640px) {
-    body { padding: 15px; }
-    h1 { font-size: 2rem; }
-    summary { padding: 16px; font-size: 1rem; }
-    td, th { padding: 12px 16px; }
-    .search-container { top: 10px; }
+    body { padding: 20px 15px; }
+    h1 { font-size: 2.2rem; }
+    summary { padding: 20px; font-size: 1.1rem; }
+    td, th { padding: 14px 20px; }
 }
