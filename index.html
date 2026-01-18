@@ -4,28 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xander & Kari System</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /* Basic Styling */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #eef2ff; color: #334155; margin: 0; padding: 20px; line-height: 1.5; }
+        .container { max-width: 800px; margin: 0 auto; background-color: transparent; }
+        
+        /* Header */
+        h1 { text-align: center; color: #1e3a8a; margin-bottom: 5px; font-weight: 800; letter-spacing: -0.02em; }
+        .subtitle { text-align: center; color: #475569; margin-bottom: 25px; font-weight: 500; font-size: 1.1em; }
+        
+        /* Search Box */
+        .search-container { position: sticky; top: 10px; z-index: 100; margin-bottom: 20px; }
+        #search-box { width: 100%; padding: 15px 20px; font-size: 1.1em; border: 1px solid #93c5fd; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); outline: none; transition: all 0.2s; }
+        #search-box:focus { border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2); }
+
+        /* Accordion / Details Styling */
+        details { background-color: #fff; margin-bottom: 12px; border-radius: 8px; border: 1px solid #cbd5e1; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+        summary { cursor: pointer; padding: 15px 20px; font-weight: 600; background-color: #fff; color: #0f172a; font-size: 1.05em; display: flex; align-items: center; justify-content: space-between; transition: background 0.15s; user-select: none; }
+        summary:hover { background-color: #f8fafc; }
+        summary::after { content: '+'; font-size: 1.2em; color: #94a3b8; font-weight: 400; }
+        details[open] summary::after { content: '−'; }
+        details[open] summary { border-bottom: 1px solid #e2e8f0; background-color: #f8fafc; color: #0369a1; }
+
+        /* Content Areas */
+        .content { padding: 0; }
+        .subheader-bar { background-color: #f1f5f9; color: #334155; padding: 8px 20px; font-size: 0.85em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #e2e8f0; border-top: 1px solid #e2e8f0; }
+        .table-wrapper { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.95em; }
+        th { text-align: left; padding: 12px 20px; color: #64748b; font-weight: 600; border-bottom: 2px solid #e2e8f0; background-color: #fff; }
+        td { padding: 12px 20px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+        tr:last-child td { border-bottom: none; }
+        
+        /* Suit Colors */
+        .suit-c { color: #008000; font-family: monospace; } /* Green Clubs */
+        .suit-d { color: #d97706; font-family: monospace; } /* Orange Diamonds */
+        .suit-h { color: #dc2626; font-family: monospace; } /* Red Hearts */
+        .suit-s { color: #0f172a; font-family: monospace; } /* Black Spades */
+        .suit-r { color: #dc2626; } /* Generic Red */
+        .suit-b { color: #0f172a; } /* Generic Black */
+
+        /* Nested Tables */
+        .nested-table td { padding: 4px 8px; border: none; font-size: 0.95em; }
+        .nested-key { font-weight: 600; color: #475569; padding-right: 10px; white-space: nowrap; }
+        .nested-val { color: #334155; }
+    </style>
 </head>
 <body>
 
 <div class="container">
-    <header>
-        <h1>Xander & Kari</h1>
-        <div class="subtitle">System Agreement &bull; 2026</div>
-        
-        <div class="search-container">
-            <input type="text" id="search-box" placeholder="Search system (e.g. 'Lebensohl', 'Drury')...">
-        </div>
-        
-        </header>
+    <h1>Xander & Kari</h1>
+    <div class="subtitle">System Agreement • 2026</div>
+
+    <div class="search-container">
+        <input type="text" id="search-box" placeholder="Search system (e.g. 'Lebensohl', 'Drury')...">
+    </div>
 
     <div id="system-content"></div>
+
 </div>
 
-<script type="module" src="./js/app.js"></script>
+<script type="module" src="js/app.js"></script>
 
 </body>
 </html>
