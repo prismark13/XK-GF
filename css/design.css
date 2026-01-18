@@ -4,16 +4,16 @@
 
 /* --- VARIABLES --- */
 :root {
-    --bg-body: #f3f4f6;        /* Cool gray */
+    --bg-body: #f3f4f6;        /* Cool gray background */
     --bg-card: #ffffff;
     --text-main: #111827;      /* Nearly black */
     --text-muted: #6b7280;     /* Gray 500 */
     --primary: #4f46e5;        /* Indigo 600 */
     --primary-gradient: linear-gradient(135deg, #4f46e5 0%, #0ea5e9 100%); /* Indigo to Sky Blue */
     --border: #e5e7eb;
-    --radius: 16px;            /* More rounded */
-    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+    --radius: 16px;            /* Modern rounded corners */
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
 }
 
 /* --- BASE --- */
@@ -40,14 +40,14 @@ h1 {
     text-align: center;
     margin: 0 0 10px 0;
     font-weight: 800;
-    font-size: 3.5rem; /* Larger */
+    font-size: 3rem;
     letter-spacing: -0.04em;
     
     /* Gradient Text Effect */
     background: var(--primary-gradient);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
     display: inline-block;
     width: 100%;
 }
@@ -77,7 +77,7 @@ h1 {
     border: 1px solid rgba(255,255,255,0.6);
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
-    border-radius: 50px; /* Full Pill Shape */
+    border-radius: 50px; /* Pill Shape */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
     outline: none;
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -86,7 +86,7 @@ h1 {
 
 #search-box:focus {
     transform: translateY(-2px) scale(1.01);
-    box-shadow: 0 12px 40px rgba(79, 70, 229, 0.15); /* Indigo shadow */
+    box-shadow: 0 12px 40px rgba(79, 70, 229, 0.15);
     border-color: rgba(79, 70, 229, 0.3);
 }
 
@@ -129,7 +129,6 @@ summary {
 
 summary::-webkit-details-marker { display: none; }
 
-/* Custom Gradient Icon */
 summary::after {
     content: '+';
     font-size: 1.8rem;
@@ -142,7 +141,7 @@ summary::after {
 details[open] summary::after {
     content: '−';
     color: var(--primary);
-    transform: rotate(180deg); /* Subtle spin animation */
+    transform: rotate(180deg);
 }
 
 details[open] summary {
@@ -150,14 +149,8 @@ details[open] summary {
 }
 
 /* --- CONTENT AREA --- */
-.content {
-    animation: fadeIn 0.4s ease;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-8px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+.content { animation: fadeIn 0.4s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
 
 .subheader-bar {
     background-color: #f9fafb;
@@ -188,7 +181,7 @@ th {
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    background-color: #f9fafb; /* Subtle background for headers */
+    background-color: #f9fafb;
     border-bottom: 1px solid var(--border);
     white-space: nowrap;
 }
@@ -202,17 +195,13 @@ td {
 }
 
 tr:last-child td { border-bottom: none; }
+tbody tr:hover td { background-color: #f9fafb; }
 
-/* Row Hover Effect */
-tbody tr:hover td {
-    background-color: #f9fafb;
-}
-
-/* Bid Column Styling */
+/* Bid Column */
 td:first-child {
     font-weight: 700;
     color: #111827;
-    font-family: 'Inter', monospace; /* Keep consistent font, just bolder */
+    font-family: 'Inter', monospace;
     min-width: 100px;
 }
 
@@ -224,19 +213,8 @@ td:first-child {
 
 /* --- NESTED TABLES --- */
 .nested-table { margin-top: 10px; }
-.nested-table td {
-    padding: 4px 0;
-    border: none;
-    background: transparent !important;
-    font-size: 0.9rem;
-}
-.nested-key {
-    width: 1%;
-    white-space: nowrap;
-    padding-right: 20px !important;
-    color: #6b7280;
-    font-weight: 500;
-}
+.nested-table td { padding: 4px 0; border: none; background: transparent !important; font-size: 0.9rem; }
+.nested-key { width: 1%; white-space: nowrap; padding-right: 20px !important; color: #6b7280; font-weight: 500; }
 
 /* --- MOBILE --- */
 @media (max-width: 640px) {
