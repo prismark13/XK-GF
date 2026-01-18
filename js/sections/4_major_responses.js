@@ -1,5 +1,5 @@
 export const majorResponses = `
-<details>
+<details class="cat-nt">
     <summary><span>Responses to 1<span class="suit-h">♥</span> / 1<span class="suit-s">♠</span></span></summary>
     <div class="content">
         
