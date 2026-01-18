@@ -1,67 +1,67 @@
 /* --- IMPORTS --- */
-/* Import 'Inter' font for a premium, modern app feel */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 /* --- VARIABLES --- */
 :root {
-    --bg-body: #f3f4f6;        /* Cool gray background */
+    --bg-body: #f3f4f6;        
     --bg-card: #ffffff;
-    --text-main: #111827;      /* Nearly black */
-    --text-muted: #6b7280;     /* Gray 500 */
-    --primary: #4f46e5;        /* Indigo 600 */
-    --primary-gradient: linear-gradient(135deg, #4f46e5 0%, #0ea5e9 100%); /* Indigo to Sky Blue */
-    --border: #e5e7eb;
-    --radius: 16px;            /* Modern rounded corners */
-    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+    --text-main: #1f2937;      
+    --text-muted: #6b7280;     
+    --primary: #4f46e5;        
+    --header-gradient: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%); /* Indigo to Cyan */
+    --radius: 16px;
+    --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 /* --- BASE --- */
 * { box-sizing: border-box; }
 
 body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif; /* The biggest change */
+    font-family: 'Inter', sans-serif;
     background-color: var(--bg-body);
     color: var(--text-main);
     margin: 0;
-    padding: 40px 20px;
+    padding: 0; /* Remove padding so color touches edges */
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+}
+
+/* --- THE COLORED BANNER --- */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%;
+    height: 320px; /* Height of the blue background */
+    background: var(--header-gradient);
+    z-index: -1;
 }
 
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding: 40px 20px 80px 20px;
 }
 
-/* --- PREMIUM HEADER --- */
+/* --- HEADER TEXT (Now White) --- */
 h1 {
     text-align: center;
-    margin: 0 0 10px 0;
+    margin: 20px 0 10px 0;
     font-weight: 800;
-    font-size: 3rem;
-    letter-spacing: -0.04em;
-    
-    /* Gradient Text Effect */
-    background: var(--primary-gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-    width: 100%;
+    font-size: 3.5rem;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow for readability */
 }
 
 .subtitle {
     text-align: center;
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.9); /* Soft white */
     margin-bottom: 50px;
     font-weight: 500;
     font-size: 1.2rem;
-    letter-spacing: -0.01em;
 }
 
-/* --- FLOATING SEARCH BAR --- */
+/* --- SEARCH BAR --- */
 .search-container {
     position: sticky;
     top: 20px;
@@ -71,119 +71,99 @@ h1 {
 
 #search-box {
     width: 100%;
-    padding: 20px 28px;
+    padding: 22px 30px;
     font-size: 1.1rem;
     font-family: 'Inter', sans-serif;
-    border: 1px solid rgba(255,255,255,0.6);
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(12px);
-    border-radius: 50px; /* Pill Shape */
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+    border: none;
+    background: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
     outline: none;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.2s, box-shadow 0.2s;
     color: var(--text-main);
 }
 
 #search-box:focus {
-    transform: translateY(-2px) scale(1.01);
-    box-shadow: 0 12px 40px rgba(79, 70, 229, 0.15);
-    border-color: rgba(79, 70, 229, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-#search-box::placeholder { color: #9ca3af; font-weight: 400; }
+#search-box::placeholder { color: #9ca3af; }
 
 /* --- CARDS (DETAILS) --- */
 details {
     background-color: var(--bg-card);
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     border-radius: var(--radius);
-    border: 1px solid #fff; /* White border for crispness */
-    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(255,255,255,0.5);
+    box-shadow: var(--shadow-card);
     overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-details:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
-}
-
-details[open] {
-    box-shadow: var(--shadow-hover);
-    border-color: #e0e7ff; /* Faint indigo border */
 }
 
 summary {
     cursor: pointer;
     padding: 24px 32px;
     font-weight: 700;
-    font-size: 1.2rem;
-    color: var(--text-main);
+    font-size: 1.15rem;
+    color: #111827;
     background-color: var(--bg-card);
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
-    letter-spacing: -0.02em;
+    transition: background 0.15s;
 }
 
+summary:hover { background-color: #f9fafb; }
 summary::-webkit-details-marker { display: none; }
 
+/* Icon */
 summary::after {
     content: '+';
-    font-size: 1.8rem;
-    color: #d1d5db;
+    font-size: 1.5rem;
+    color: #d1d5db; /* Light gray icon */
     font-weight: 300;
-    line-height: 1;
-    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 details[open] summary::after {
     content: '−';
     color: var(--primary);
-    transform: rotate(180deg);
+    font-weight: 600;
 }
 
 details[open] summary {
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid #e5e7eb;
+    color: var(--primary);
 }
 
-/* --- CONTENT AREA --- */
+/* --- CONTENT --- */
 .content { animation: fadeIn 0.4s ease; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
 
 .subheader-bar {
-    background-color: #f9fafb;
-    color: #6b7280;
+    background-color: #f8fafc;
+    color: #64748b;
     padding: 12px 32px;
     font-size: 0.75rem;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    border-bottom: 1px solid var(--border);
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 /* --- TABLES --- */
 .table-wrapper { overflow-x: auto; }
-
-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    font-size: 0.95rem;
-}
+table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
 
 th {
     text-align: left;
     padding: 16px 32px;
-    color: #4b5563;
+    color: #6b7280;
     font-weight: 600;
     font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    background-color: #f9fafb;
-    border-bottom: 1px solid var(--border);
-    white-space: nowrap;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e5e7eb;
 }
 
 td {
@@ -191,13 +171,12 @@ td {
     border-bottom: 1px solid #f3f4f6;
     vertical-align: top;
     color: #374151;
-    transition: background-color 0.2s;
 }
 
 tr:last-child td { border-bottom: none; }
 tbody tr:hover td { background-color: #f9fafb; }
 
-/* Bid Column */
+/* Bold Bids */
 td:first-child {
     font-weight: 700;
     color: #111827;
@@ -205,21 +184,19 @@ td:first-child {
     min-width: 100px;
 }
 
-/* --- SUITS --- */
+/* Suits */
 .suit-c { color: #16a34a; font-weight: 700; }
 .suit-d { color: #d97706; font-weight: 700; }
 .suit-h { color: #dc2626; font-weight: 700; }
 .suit-s { color: #111827; font-weight: 700; }
 
-/* --- NESTED TABLES --- */
-.nested-table { margin-top: 10px; }
-.nested-table td { padding: 4px 0; border: none; background: transparent !important; font-size: 0.9rem; }
-.nested-key { width: 1%; white-space: nowrap; padding-right: 20px !important; color: #6b7280; font-weight: 500; }
+/* Nested */
+.nested-table td { padding: 4px 0; border: none; background: transparent !important; }
+.nested-key { width: 1%; white-space: nowrap; padding-right: 15px !important; color: #6b7280; font-weight: 500; }
 
-/* --- MOBILE --- */
+/* Mobile */
 @media (max-width: 640px) {
-    body { padding: 20px 15px; }
-    h1 { font-size: 2.2rem; }
-    summary { padding: 20px; font-size: 1.1rem; }
+    h1 { font-size: 2.5rem; }
+    .container { padding: 20px 15px; }
     td, th { padding: 14px 20px; }
 }
