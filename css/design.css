@@ -1,16 +1,16 @@
 /* --- IMPORTS --- */
 /* Import 'Inter' font for a premium, modern app feel */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 /* --- VARIABLES --- */
 :root {
-    --bg-body: #f3f6f9;        /* Slightly cooler gray */
+    --bg-body: #f3f4f6;        /* Cool gray */
     --bg-card: #ffffff;
-    --text-main: #1e293b;      /* Slate 800 */
-    --text-muted: #64748b;     /* Slate 500 */
-    --primary: #2563eb;        /* Blue 600 */
-    --primary-gradient: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%); /* Blue to Indigo */
-    --border: #e2e8f0;
+    --text-main: #111827;      /* Nearly black */
+    --text-muted: #6b7280;     /* Gray 500 */
+    --primary: #4f46e5;        /* Indigo 600 */
+    --primary-gradient: linear-gradient(135deg, #4f46e5 0%, #0ea5e9 100%); /* Indigo to Sky Blue */
+    --border: #e5e7eb;
     --radius: 16px;            /* More rounded */
     --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
@@ -20,7 +20,7 @@
 * { box-sizing: border-box; }
 
 body {
-    font-family: 'Inter', sans-serif; /* The biggest change */
+    font-family: 'Inter', system-ui, -apple-system, sans-serif; /* The biggest change */
     background-color: var(--bg-body);
     color: var(--text-main);
     margin: 0;
@@ -40,13 +40,14 @@ h1 {
     text-align: center;
     margin: 0 0 10px 0;
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 3.5rem; /* Larger */
     letter-spacing: -0.04em;
     
     /* Gradient Text Effect */
     background: var(--primary-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     display: inline-block;
     width: 100%;
 }
@@ -56,7 +57,7 @@ h1 {
     color: var(--text-muted);
     margin-bottom: 50px;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     letter-spacing: -0.01em;
 }
 
@@ -85,11 +86,11 @@ h1 {
 
 #search-box:focus {
     transform: translateY(-2px) scale(1.01);
-    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.15);
-    border-color: rgba(37, 99, 235, 0.3);
+    box-shadow: 0 12px 40px rgba(79, 70, 229, 0.15); /* Indigo shadow */
+    border-color: rgba(79, 70, 229, 0.3);
 }
 
-#search-box::placeholder { color: #94a3b8; font-weight: 400; }
+#search-box::placeholder { color: #9ca3af; font-weight: 400; }
 
 /* --- CARDS (DETAILS) --- */
 details {
@@ -109,7 +110,7 @@ details:hover {
 
 details[open] {
     box-shadow: var(--shadow-hover);
-    border-color: #e0e7ff; /* Faint purple/blue border */
+    border-color: #e0e7ff; /* Faint indigo border */
 }
 
 summary {
@@ -132,7 +133,7 @@ summary::-webkit-details-marker { display: none; }
 summary::after {
     content: '+';
     font-size: 1.8rem;
-    color: #cbd5e1;
+    color: #d1d5db;
     font-weight: 300;
     line-height: 1;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -140,7 +141,7 @@ summary::after {
 
 details[open] summary::after {
     content: '−';
-    color: #4f46e5;
+    color: var(--primary);
     transform: rotate(180deg); /* Subtle spin animation */
 }
 
@@ -159,8 +160,8 @@ details[open] summary {
 }
 
 .subheader-bar {
-    background-color: #f8fafc;
-    color: #64748b;
+    background-color: #f9fafb;
+    color: #6b7280;
     padding: 12px 32px;
     font-size: 0.75rem;
     font-weight: 800;
@@ -174,7 +175,7 @@ details[open] summary {
 
 table {
     width: 100%;
-    border-collapse: separate; /* Allows border radius on rows if needed */
+    border-collapse: separate;
     border-spacing: 0;
     font-size: 0.95rem;
 }
@@ -182,7 +183,7 @@ table {
 th {
     text-align: left;
     padding: 16px 32px;
-    color: #475569;
+    color: #4b5563;
     font-weight: 600;
     font-size: 0.8rem;
     text-transform: uppercase;
@@ -194,9 +195,9 @@ th {
 
 td {
     padding: 18px 32px;
-    border-bottom: 1px solid #f1f5f9;
+    border-bottom: 1px solid #f3f4f6;
     vertical-align: top;
-    color: #334155;
+    color: #374151;
     transition: background-color 0.2s;
 }
 
@@ -204,27 +205,27 @@ tr:last-child td { border-bottom: none; }
 
 /* Row Hover Effect */
 tbody tr:hover td {
-    background-color: #f8fafc;
+    background-color: #f9fafb;
 }
 
 /* Bid Column Styling */
 td:first-child {
     font-weight: 700;
-    color: #0f172a;
-    font-family: 'Inter', sans-serif; /* Keep consistent font, just bolder */
-    min-width: 120px;
+    color: #111827;
+    font-family: 'Inter', monospace; /* Keep consistent font, just bolder */
+    min-width: 100px;
 }
 
 /* --- SUITS --- */
 .suit-c { color: #16a34a; font-weight: 700; }
 .suit-d { color: #d97706; font-weight: 700; }
 .suit-h { color: #dc2626; font-weight: 700; }
-.suit-s { color: #0f172a; font-weight: 700; }
+.suit-s { color: #111827; font-weight: 700; }
 
 /* --- NESTED TABLES --- */
 .nested-table { margin-top: 10px; }
 .nested-table td {
-    padding: 6px 0;
+    padding: 4px 0;
     border: none;
     background: transparent !important;
     font-size: 0.9rem;
@@ -233,7 +234,7 @@ td:first-child {
     width: 1%;
     white-space: nowrap;
     padding-right: 20px !important;
-    color: #64748b;
+    color: #6b7280;
     font-weight: 500;
 }
 
