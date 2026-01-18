@@ -17,12 +17,12 @@ export const clubOpening = `
                     <tr>
                         <td><span class="suit-d">2♦</span></td>
                         <td><strong>Waiting</strong></td>
-                        <td>Artificial. [cite_start]Majority of hands (0+ HCP)[cite: 3].</td>
+                        <td>Artificial. Majority of hands (0+ HCP).</td>
                     </tr>
                     <tr>
                         <td>2<span class="suit-h">♥</span>/2<span class="suit-s">♠</span><br>3<span class="suit-c">♣</span>/3<span class="suit-d">♦</span></td>
                         <td><strong>Positive</strong></td>
-                        <td>8+ HCP. [cite_start]Good 5+ suit (2 of top 3 honors)[cite: 506].</td>
+                        <td>8+ HCP. Good 5+ suit (2 of top 3 honors).</td>
                     </tr>
                     <tr>
                         <td>2NT</td>
@@ -41,13 +41,8 @@ export const clubOpening = `
                         <td style="width: 15%"><strong>2NT</strong></td>
                         <td style="width: 20%"><strong>22-24 Bal</strong></td>
                         <td>
-                            <strong>System ON</strong> (4-Way Transfers):
-                            <div style="margin-top: 4px; font-size: 0.9em;">
-                                3<span class="suit-c">♣</span>&rarr;<span class="suit-h">♥</span> &nbsp;|&nbsp; 
-                                3<span class="suit-d">♦</span>&rarr;<span class="suit-s">♠</span> &nbsp;|&nbsp; 
-                                3<span class="suit-h">♥</span>&rarr;<span class="suit-c">♣</span> &nbsp;|&nbsp; 
-                                3<span class="suit-s">♠</span>&rarr;<span class="suit-d">♦</span>
-                            </div>
+                            <strong>Systems ON.</strong><br>
+                            Continue as if opening 2NT (Stayman, Transfers, etc.).
                         </td>
                     </tr>
 
@@ -56,12 +51,13 @@ export const clubOpening = `
                         <td><strong>Kokish Relay</strong></td>
                         <td>
                             Shows <span class="suit-h">♥</span> <strong>OR</strong> 25+ Balanced.<br>
-                            [cite_start]<strong>Resp 2<span class="suit-s">♠</span> forced.</strong> Opener rebids[cite: 638, 639]:
+                            <strong>Resp 2<span class="suit-s">♠</span> forced.</strong> Opener rebids:
                             <table class="nested-table" style="margin-top:8px; border-left: 3px solid #cbd5e1;">
                                 <tr>
                                     <td class="nested-key">2NT</td>
                                     <td class="nested-val">
-                                        <strong>25+ Bal.</strong> GF. [cite_start]Systems ON (same as 2NT opening)[cite: 640, 641].
+                                        <strong>25+ Bal.</strong> GF.<br>
+                                        <strong>Systems ON.</strong> Continue as if opening 2NT.
                                     </td>
                                 </tr>
                                 <tr>
@@ -69,38 +65,38 @@ export const clubOpening = `
                                     <td class="nested-val">
                                         <strong>5+ <span class="suit-h">♥</span> (21+ HCP).</strong><br>
                                         &rarr; Resp 3<span class="suit-d">♦</span>: 2nd Negative (may pass 3<span class="suit-h">♥</span>).<br>
-                                        &rarr; [cite_start]Other: Natural GF[cite: 642, 643, 644].
+                                        &rarr; Other: Natural GF.
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="nested-key">3<span class="suit-d">♦</span></td>
                                     <td class="nested-val">
-                                        <strong>5+ <span class="suit-h">♥</span> & 4+ <span class="suit-d">♦</span>. [cite_start]GF (25+).</strong> [cite: 645]<br>
+                                        <strong>5+ <span class="suit-h">♥</span> & 4+ <span class="suit-d">♦</span>. GF (25+).</strong><br>
                                         <div style="font-size:0.9em; margin-top:2px;">
                                             3<span class="suit-h">♥</span>: Punt.<br>
                                             3<span class="suit-s">♠</span>/3NT: Natural.<br>
-                                            4<span class="suit-c">♣</span>: <span class="suit-h">♥</span> Raise. [cite_start]4<span class="suit-d">♦</span>: <span class="suit-d">♦</span> Raise [cite: 646-650].
+                                            4<span class="suit-c">♣</span>: <span class="suit-h">♥</span> Raise. 4<span class="suit-d">♦</span>: <span class="suit-d">♦</span> Raise.
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="nested-key">3<span class="suit-h">♥</span></td>
                                     <td class="nested-val">
-                                        <strong>5+ <span class="suit-h">♥</span> & 4+ <span class="suit-c">♣</span>. [cite_start]GF (25+).</strong> [cite: 651]<br>
+                                        <strong>5+ <span class="suit-h">♥</span> & 4+ <span class="suit-c">♣</span>. GF (25+).</strong><br>
                                         <div style="font-size:0.9em; margin-top:2px;">
                                             3<span class="suit-s">♠</span>/3NT: Natural.<br>
-                                            4<span class="suit-c">♣</span>: <span class="suit-c">♣</span> Raise. [cite_start]4<span class="suit-d">♦</span>: <span class="suit-h">♥</span> Raise [cite: 652-655].
+                                            4<span class="suit-c">♣</span>: <span class="suit-c">♣</span> Raise. 4<span class="suit-d">♦</span>: <span class="suit-h">♥</span> Raise.
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="nested-key">3<span class="suit-s">♠</span></td>
                                     <td class="nested-val">
-                                        <strong>5+ <span class="suit-h">♥</span> & 4 <span class="suit-s">♠</span>. [cite_start]GF (25+).</strong> [cite: 656]<br>
+                                        <strong>5+ <span class="suit-h">♥</span> & 4 <span class="suit-s">♠</span>. GF (25+).</strong><br>
                                         <div style="font-size:0.9em; margin-top:2px;">
                                             3NT: Natural.<br>
                                             4<span class="suit-c">♣</span>: Strong <span class="suit-h">♥</span> Raise. 4<span class="suit-d">♦</span>: Strong <span class="suit-s">♠</span> Raise.<br>
-                                            4<span class="suit-h">♥</span>: Weak <span class="suit-h">♥</span> Raise. [cite_start]4<span class="suit-s">♠</span>: Weak <span class="suit-s">♠</span> Raise [cite: 657-661].
+                                            4<span class="suit-h">♥</span>: Weak <span class="suit-h">♥</span> Raise. 4<span class="suit-s">♠</span>: Weak <span class="suit-s">♠</span> Raise.
                                         </div>
                                     </td>
                                 </tr>
