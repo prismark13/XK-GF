@@ -1,128 +1,288 @@
 /* --- IMPORTS --- */
+/* Import 'Inter' font for a clean, modern tech feel */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 /* --- VARIABLES --- */
 :root {
     /* --- Main Theme Colors --- */
-    --bg-body: #f8fafc;        /* Slightly lighter background */
-    --bg-pattern: #e2e8f0;     /* Color of the background dots */
+    --bg-body: #f8fafc;        /* Light slate background */
+    --bg-pattern: #cbd5e1;     /* Color of the background dots (Slightly darker for visibility) */
     --bg-card: #ffffff;
-    --text-main: #1f2937;
-    --text-muted: #64748b;
-    --banner-gradient: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%); /* Blue to Cyan */
+    --text-main: #1f2937;      /* Slate 800 */
+    --text-muted: #64748b;     /* Slate 500 */
+    
+    /* --- Header Gradient --- */
+    /* Deep Blue to Cyan/Teal - Professional & Vibrant */
+    --banner-gradient: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #06b6d4 100%); 
+    
+    /* --- Dimensions & Shadows --- */
     --radius: 16px;
     --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --shadow-search: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 
-    /* --- Category Palette --- */
-    --accent-default: #3b82f6; /* Blue */
-    --accent-nt:      #8b5cf6; /* Purple */
-    --accent-major:   #f59e0b; /* Amber */
-    --accent-minor:   #10b981; /* Emerald */
-    --accent-defense: #f43f5e; /* Rose */
+    /* --- Category Accent Palette --- */
+    --accent-default: #3b82f6; /* Blue (General) */
+    --accent-nt:      #8b5cf6; /* Purple (NT Structure) */
+    --accent-major:   #f59e0b; /* Amber/Orange (Major Suits) */
+    --accent-minor:   #10b981; /* Emerald Green (Minors/Strong Club) */
+    --accent-defense: #f43f5e; /* Rose Red (Competitive/Defensive) */
 }
 
-/* --- BASE --- */
+/* --- BASE STYLES --- */
 * { box-sizing: border-box; }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     background-color: var(--bg-body);
-    /* THIS ADDS THE SUBTLE DOT PATTERN */
-    background-image: radial-gradient(var(--bg-pattern) 1px, transparent 1px);
-    background-size: 24px 24px; /* Distance between dots */
-    
     color: var(--text-main);
-    margin: 0; padding: 0; line-height: 1.6; min-height: 100vh;
+    margin: 0; padding: 0; 
+    line-height: 1.6; 
+    min-height: 100vh;
+
+    /* SUBTLE DOT PATTERN BACKGROUND */
+    background-image: radial-gradient(var(--bg-pattern) 1.5px, transparent 1.5px);
+    background-size: 32px 32px; /* Spacing between dots */
 }
 
 /* --- HEADER BANNER --- */
 body::before {
-    content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 300px;
-    background: var(--banner-gradient); z-index: -1;
-    /* Add a slight fade at the bottom of the banner */
-    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%;
+    height: 320px; /* Tall enough to sit behind search bar */
+    background: var(--banner-gradient);
+    z-index: -1;
+    /* Soft fade out at the bottom */
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
 }
 
-.container { max-width: 900px; margin: 0 auto; padding: 40px 20px 80px 20px; }
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 80px 20px;
+}
 
+/* --- TITLE & SUBTITLE --- */
 h1 {
-    text-align: center; margin: 10px 0 5px 0; font-weight: 800; font-size: 3.5rem;
-    color: #ffffff; text-shadow: 0 4px 12px rgba(0,0,0,0.1); letter-spacing: -0.03em;
-}
-.subtitle {
-    text-align: center; color: rgba(255, 255, 255, 0.9); margin-bottom: 50px;
-    font-weight: 500; font-size: 1.2rem;
+    text-align: center;
+    margin: 10px 0 5px 0;
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    letter-spacing: -0.03em;
 }
 
-/* --- SEARCH BAR --- */
-.search-container { position: sticky; top: 20px; z-index: 100; margin-bottom: 50px; }
-#search-box {
-    width: 100%; padding: 22px 32px; font-size: 1.1rem; font-family: 'Inter', sans-serif;
-    border: 1px solid rgba(255,255,255,0.8); background: #ffffff; border-radius: 50px;
-    box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.1), 0 5px 15px -5px rgba(0, 0, 0, 0.05);
-    outline: none; transition: transform 0.2s, box-shadow 0.2s; color: var(--text-main);
+.subtitle {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: -0.01em;
 }
+
+/* --- HERO OVERLAP SEARCH BAR --- */
+.search-container {
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+    margin-bottom: 50px;
+    
+    /* THE OVERLAP MAGIC: Pulls the search bar UP into the header */
+    margin-top: -35px; 
+}
+
+#search-box {
+    width: 100%;
+    padding: 22px 32px;
+    font-size: 1.15rem;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    background: #ffffff;
+    border-radius: 50px; /* Pill Shape */
+    box-shadow: var(--shadow-search);
+    outline: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: var(--text-main);
+}
+
 #search-box:focus {
     transform: translateY(-2px);
-    box-shadow: 0 20px 40px -5px rgba(37, 99, 235, 0.15);
-    border-color: var(--accent-default);
+    box-shadow: 0 25px 50px -12px rgba(37, 99, 235, 0.25); /* Stronger glow on focus */
 }
-#search-box::placeholder { color: #94a3b8; }
+
+#search-box::placeholder { 
+    color: #94a3b8; 
+    font-weight: 400;
+}
 
 
 /* =========================================
-   CARDS & ACCENTS
+   CARDS & CATEGORY LOGIC
 ========================================= */
-details { --current-accent: var(--accent-default); }
+
+/* 1. Set the variable based on the class on <details> */
+details { --current-accent: var(--accent-default); } /* Fallback Blue */
 details.cat-nt { --current-accent: var(--accent-nt); }
 details.cat-major { --current-accent: var(--accent-major); }
 details.cat-minor { --current-accent: var(--accent-minor); }
 details.cat-defense { --current-accent: var(--accent-defense); }
 
+/* 2. Main Card Styling */
 details {
-    background-color: var(--bg-card); margin-bottom: 20px; border-radius: var(--radius);
-    border: 1px solid #fff; /* White border to make it pop off the pattern */
+    background-color: var(--bg-card);
+    margin-bottom: 20px;
+    border-radius: var(--radius);
+    
+    /* White border to pop off the textured background */
+    border: 1px solid #ffffff; 
+    
+    /* The Colored Stripe on the left */
     border-left: 6px solid var(--current-accent);
-    box-shadow: var(--shadow-card); overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;
+    
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 details:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.08); /* Lift effect */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 summary {
-    cursor: pointer; padding: 24px 32px; font-weight: 700; font-size: 1.2rem;
-    color: #111827; background-color: var(--bg-card); display: flex;
-    justify-content: space-between; align-items: center; list-style: none;
+    cursor: pointer;
+    padding: 24px 32px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #111827;
+    background-color: var(--bg-card);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    transition: background-color 0.15s;
 }
-summary:hover { background-color: #f8fafc; }
+
+summary:hover {
+    background-color: #f8fafc;
+}
+
 summary::-webkit-details-marker { display: none; }
 
-summary::after { content: '+'; font-size: 1.5rem; color: #cbd5e1; font-weight: 400; }
+/* Icon (Plus sign) */
+summary::after {
+    content: '+';
+    font-size: 1.6rem;
+    color: #cbd5e1;
+    font-weight: 300;
+    line-height: 1;
+}
 
-details[open] summary::after { content: '−'; color: var(--current-accent); font-weight: 700; }
-details[open] summary { border-bottom: 1px solid #e2e8f0; color: var(--current-accent); }
+/* Open State Styling */
+details[open] summary::after {
+    content: '−';
+    color: var(--current-accent); /* Icon turns category color */
+    font-weight: 700;
+}
 
-/* --- CONTENT --- */
-.content { animation: fadeIn 0.3s ease; } @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+details[open] summary {
+    border-bottom: 1px solid #e2e8f0;
+    color: var(--current-accent); /* Text turns category color */
+}
 
+/* --- CONTENT ANIMATION --- */
+.content {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- SUBHEADERS --- */
 .subheader-bar {
-    background-color: #f1f5f9; color: #475569; padding: 12px 32px; font-size: 0.8rem;
-    font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #e2e8f0;
+    background-color: #f1f5f9;
+    color: #475569;
+    padding: 12px 32px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid #e2e8f0;
 }
-.table-wrapper { overflow-x: auto; } table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+
+/* --- TABLES --- */
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
 th {
-    text-align: left; padding: 16px 32px; color: #64748b; font-weight: 600; font-size: 0.8rem;
-    text-transform: uppercase; background-color: #f8fafc; border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+    padding: 16px 32px;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background-color: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    white-space: nowrap;
 }
-td { padding: 18px 32px; border-bottom: 1px solid #f1f5f9; vertical-align: top; color: #334151; }
-tr:last-child td { border-bottom: none; } tbody tr:hover td { background-color: #f9fafb; }
 
-td:first-child { font-weight: 700; color: #111827; font-family: 'Inter', monospace; min-width: 100px; }
-.suit-c { color: #16a34a; font-weight: 800; } .suit-d { color: #d97706; font-weight: 800; }
-.suit-h { color: #dc2626; font-weight: 800; } .suit-s { color: #111827; font-weight: 800; }
-.nested-table td { padding: 4px 0; border: none; background: transparent !important; }
-.nested-key { width: 1%; white-space: nowrap; padding-right: 15px !important; color: #6b7280; font-weight: 500; }
+td {
+    padding: 18px 32px;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: top;
+    color: #334155;
+}
 
-@media (max-width: 640px) { h1 { font-size: 2.2rem; } .container { padding: 20px 15px; } td, th { padding: 14px 20px; } }
+tr:last-child td { border-bottom: none; }
+tbody tr:hover td { background-color: #f9fafb; } /* Zebra hover */
+
+/* First Column (Bids) */
+td:first-child {
+    font-weight: 700;
+    color: #0f172a;
+    font-family: 'Inter', monospace; /* Monospace numbers look better for bridge */
+    min-width: 100px;
+}
+
+/* Suit Colors */
+.suit-c { color: #16a34a; font-weight: 800; } /* Green */
+.suit-d { color: #d97706; font-weight: 800; } /* Orange */
+.suit-h { color: #dc2626; font-weight: 800; } /* Red */
+.suit-s { color: #0f172a; font-weight: 800; } /* Black */
+
+/* Nested Table Fixes */
+.nested-table td {
+    padding: 6px 0;
+    border: none;
+    background: transparent !important;
+}
+.nested-key {
+    width: 1%;
+    white-space: nowrap;
+    padding-right: 15px !important;
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 640px) {
+    h1 { font-size: 2.5rem; }
+    .container { padding: 30px 15px; }
+    #search-box { padding: 18px 24px; font-size: 1rem; }
+    summary { padding: 20px 24px; font-size: 1.1rem; }
+    td, th { padding: 14px 20px; }
+}
