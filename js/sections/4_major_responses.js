@@ -130,7 +130,7 @@ export const majorResponses = `
                                 <tr style="background-color:#f1f5f9;"><td colspan="2" style="font-weight:700; color:#475569; padding-top:6px; padding-bottom:4px;">Responder's Action:</td></tr>
                                 <tr>
                                     <td class="nested-key" style="width:55px; color:#e11d48;">2<span class="suit-d">♦</span></td>
-                                    <td class="nested-val"><strong>8+ HCP.</strong> Power Relay. <strong>Forcing.</strong><br>(Tells Opener: "If you are strong, we are in Game").</td>
+                                    <td class="nested-val"><strong>8+ HCP.</strong> Power Relay. <strong>Forcing.</strong></td>
                                 </tr>
                                 <tr>
                                     <td class="nested-key" style="width:55px;">2M</td>
@@ -157,7 +157,7 @@ export const majorResponses = `
                                 </tr>
                                 <tr>
                                     <td class="nested-key" style="width:55px;">2NT</td>
-                                    <td class="nested-val"><strong>16-17 HCP.</strong> Balanced. GF.<br><em>(This solves the "too strong for 1N rebid" gap).</em></td>
+                                    <td class="nested-val"><strong>18-19 HCP.</strong> Balanced. GF.<br><em>(Too strong to open 1NT).</em></td>
                                 </tr>
                                 <tr>
                                     <td class="nested-key" style="width:55px;">3<span class="suit-c">♣</span></td>
