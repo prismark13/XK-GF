@@ -99,7 +99,7 @@ export const majorResponses = `
             </table>
         </div>
 
-        <div class="subheader-bar">1NT Semi-Forcing</div>
+        <div class="subheader-bar">1NT Semi-Forcing & Gazzilli</div>
         <div class="table-wrapper">
             <table style="border-collapse: collapse; width: 100%;">
                 <thead>
@@ -122,36 +122,54 @@ export const majorResponses = `
                                 <tr style="background-color:#e0f2fe;"><td colspan="2" style="font-weight:700; color:#0369a1; padding-top:6px; padding-bottom:4px;">Opener Rebid 2<span class="suit-c">♣</span> (Gazzilli):</td></tr>
                                 <tr>
                                     <td colspan="2" style="padding: 4px 8px; font-size: 0.9em; color:#334155;">
-                                        <strong>16+ Any</strong> OR <strong>11-15 Nat <span class="suit-c">♣</span></strong>.<br>
+                                        <strong>16+ Any Hand</strong> OR <strong>11-15 Natural <span class="suit-c">♣</span></strong>.<br>
                                         <em>If 11-15, usually 3+<span class="suit-c">♣</span> (often 4+).</em>
                                     </td>
                                 </tr>
+                                
                                 <tr style="background-color:#f1f5f9;"><td colspan="2" style="font-weight:700; color:#475569; padding-top:6px; padding-bottom:4px;">Responder's Action:</td></tr>
                                 <tr>
                                     <td class="nested-key" style="width:55px; color:#e11d48;">2<span class="suit-d">♦</span></td>
-                                    <td class="nested-val"><strong>8+ HCP.</strong> Any Shape. <strong>Forcing.</strong></td>
+                                    <td class="nested-val"><strong>8+ HCP.</strong> Power Relay. <strong>Forcing.</strong><br>(Tells Opener: "If you are strong, we are in Game").</td>
                                 </tr>
                                 <tr>
                                     <td class="nested-key" style="width:55px;">2M</td>
-                                    <td class="nested-val"><strong>5-7 HCP.</strong> Weak Preference.</td>
-                                </tr>
-                                
-                                <tr style="background-color:#f1f5f9;"><td colspan="2" style="font-weight:700; color:#475569; padding-top:6px; padding-bottom:4px;">Opener after 2<span class="suit-d">♦</span> (8+):</td></tr>
-                                <tr>
-                                    <td class="nested-key" style="width:55px;">2M</td>
-                                    <td class="nested-val"><strong>Weak (11-15).</strong> Natural <span class="suit-c">♣</span>.<br><em>Responder Passes or Corrects.</em></td>
+                                    <td class="nested-val"><strong>5-7 HCP.</strong> Weak Preference. (To Play).</td>
                                 </tr>
                                 <tr>
                                     <td class="nested-key" style="width:55px;">2<span class="suit-s">♠</span></td>
-                                    <td class="nested-val"><strong>16+ HCP.</strong> Natural Reverse (4+<span class="suit-s">♠</span>).<br><em>(If 1<span class="suit-h">♥</span> Opened).</em></td>
+                                    <td class="nested-val"><strong>Natural Weak.</strong> (If 1<span class="suit-h">♥</span> opened). 5+<span class="suit-s">♠</span>, 5-7 HCP.</td>
+                                </tr>
+                                
+                                <tr style="background-color:#f1f5f9;"><td colspan="2" style="font-weight:700; color:#475569; padding-top:6px; padding-bottom:4px;">Opener after 2<span class="suit-d">♦</span> (8+) Relay:</td></tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">2M</td>
+                                    <td class="nested-val">
+                                        <strong>Weak (11-15).</strong> Natural <span class="suit-c">♣</span>.<br>
+                                        <span style="font-size:0.9em; color:#555;">Resp Continuation:</span><br>
+                                        &bull; <strong>Pass:</strong> 8-10 HCP.<br>
+                                        &bull; <strong>2NT/3m:</strong> Game Force.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">2<span class="suit-s">♠</span></td>
+                                    <td class="nested-val"><strong>16+ HCP.</strong> 4+<span class="suit-s">♠</span> (Reverse). GF.<br><em>(If 1<span class="suit-h">♥</span> Opened).</em></td>
                                 </tr>
                                 <tr>
                                     <td class="nested-key" style="width:55px;">2NT</td>
-                                    <td class="nested-val"><strong>18-19 HCP.</strong> Balanced.</td>
+                                    <td class="nested-val"><strong>16-17 HCP.</strong> Balanced. GF.<br><em>(This solves the "too strong for 1N rebid" gap).</em></td>
                                 </tr>
                                 <tr>
-                                    <td class="nested-key" style="width:55px;">3m</td>
-                                    <td class="nested-val"><strong>16+ HCP.</strong> Natural 5+ suit.</td>
+                                    <td class="nested-key" style="width:55px;">3<span class="suit-c">♣</span></td>
+                                    <td class="nested-val"><strong>16+ HCP.</strong> 5+<span class="suit-c">♣</span>. GF.</td>
+                                </tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">3<span class="suit-d">♦</span></td>
+                                    <td class="nested-val"><strong>16+ HCP.</strong> 5+<span class="suit-d">♦</span>. GF.</td>
+                                </tr>
+                                <tr>
+                                    <td class="nested-key" style="width:55px;">3M</td>
+                                    <td class="nested-val"><strong>16+ HCP.</strong> 6+M. GF. (Picture).</td>
                                 </tr>
                             </table>
                         </td>
