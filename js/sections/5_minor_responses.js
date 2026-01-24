@@ -158,20 +158,22 @@ export const minorResponses = `
                     <tr style="border-bottom: 2px solid #e2e8f0;">
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">3m</td>
                         <td style="padding: 14px; vertical-align: top;">
-                            <strong>Mixed Raise</strong>
+                            <strong>Preemptive</strong>
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            <strong>5 - 8 HCP.</strong> 5+ card support.
+                            <strong>0 - 6 HCP.</strong> 5+ support (usually 6).<br>
+                            <em>(Previously Mixed).</em>
                         </td>
                     </tr>
                     <tr style="border-bottom: 2px solid #e2e8f0;">
                         <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; vertical-align: top;">3om</td>
                         <td style="padding: 14px; vertical-align: top;">
-                            <strong>Invitational / Other</strong>
+                            <strong>Mixed Raise</strong>
                         </td>
                         <td style="padding: 14px; vertical-align: top;">
-                            <strong>1<span class="suit-d">♦</span> &rarr; 3<span class="suit-c">♣</span>:</strong> Invitational.<br>
-                            <strong>1<span class="suit-c">♣</span> &rarr; 3<span class="suit-d">♦</span>:</strong> N/A (or Splinter).
+                            <strong>7 - 9 HCP.</strong> 5+ support. (Criss-Cross).<br>
+                            <strong>1<span class="suit-d">♦</span> &rarr; 3<span class="suit-c">♣</span>:</strong> Mixed Raise in <span class="suit-d">♦</span>.<br>
+                            <strong>1<span class="suit-c">♣</span> &rarr; 3<span class="suit-d">♦</span>:</strong> Mixed Raise in <span class="suit-c">♣</span>.
                         </td>
                     </tr>
                     <tr style="border-bottom: 2px solid #e2e8f0;">
