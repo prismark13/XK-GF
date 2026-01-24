@@ -239,24 +239,36 @@ export const majorResponses = `
             </div>
 
             <div style="margin-top:20px; padding: 15px; font-size: 0.95em; color: #334155; background-color: #f1f5f9; border-left: 4px solid #64748b;">
-                <strong>Advanced Relays (Impossible Bids):</strong>
+                <strong>Advanced Relays (Levin-Weinstein Detail):</strong>
                 
                 <div style="margin-top:10px;">
                     <strong>Scenario A: Strong Reverse</strong><br>
                     <span style="font-size:0.9em;">Auction: 1<span class="suit-s">♠</span> - 1NT; 2<span class="suit-c">♣</span> - 2<span class="suit-d">♦</span>; <strong>2<span class="suit-h">♥</span></strong> (16+, 5<span class="suit-s">♠</span>-4<span class="suit-h">♥</span>)</span>
                     <ul style="margin-top:4px; padding-left:20px;">
-                        <li><strong>2<span class="suit-s">♠</span>:</strong> Artificial Relay (GF). "Tell me more (support/stops)."</li>
-                        <li><strong>2NT:</strong> Lebensohl-ish (Ask for stops).</li>
+                        <li><strong>2<span class="suit-s">♠</span>:</strong> Artificial Relay (GF). "Tell me more."</li>
                     </ul>
+                    <div style="margin-left:20px; font-size:0.9em; color:#555;">
+                        <em>Opener Replies to 2<span class="suit-s">♠</span> Relay:</em><br>
+                        &bull; <strong>2NT:</strong> 18-19 Balanced (5-4-2-2).<br>
+                        &bull; <strong>3m:</strong> Natural location of cards (3+ pieces).<br>
+                        &bull; <strong>3<span class="suit-h">♥</span>:</strong> 5-5 Majors.<br>
+                        &bull; <strong>3<span class="suit-s">♠</span>:</strong> 6<span class="suit-s">♠</span>-4<span class="suit-h">♥</span>.
+                    </div>
                 </div>
 
                 <div style="margin-top:10px;">
                     <strong>Scenario B: Weak Checkback</strong><br>
-                    <span style="font-size:0.9em;">Auction: 1<span class="suit-s">♠</span> - 1NT; 2<span class="suit-c">♣</span> - 2<span class="suit-d">♦</span>; <strong>2<span class="suit-s">♠</span></strong> (11-15, 5<span class="suit-s">♠</span>-3<span class="suit-c">♣</span>)</span>
+                    <span style="font-size:0.9em;">Auction: 1M - 1NT; 2<span class="suit-c">♣</span> - 2<span class="suit-d">♦</span>; <strong>2M</strong> (11-15 Weak)</span>
                     <ul style="margin-top:4px; padding-left:20px;">
                         <li><strong>Pass:</strong> 8-10 HCP (End of auction).</li>
-                        <li><strong>2NT:</strong> Artificial Force (11+). "Are you Min (11-12) or Max (13-15)?"</li>
+                        <li><strong>2NT:</strong> Artificial Force (12+). "Game Force Checkback."</li>
                     </ul>
+                     <div style="margin-left:20px; font-size:0.9em; color:#555;">
+                        <em>Opener Replies to 2NT Force:</em><br>
+                        &bull; <strong>3<span class="suit-c">♣</span>:</strong> Minimum (11-13).<br>
+                        &bull; <strong>3<span class="suit-d">♦</span>:</strong> Maximum (14-15) w/ Diamonds or unspecified.<br>
+                        &bull; <strong>3M:</strong> Maximum (14-15) w/ Good Trumps.
+                    </div>
                 </div>
             </div>
 
