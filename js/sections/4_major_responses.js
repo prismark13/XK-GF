@@ -1,6 +1,6 @@
 export const majorResponses = `
 <details class="cat-nt">
-    <summary><span>Expert Responses to 1<span class="suit-h">♥</span> / 1<span class="suit-s">♠</span></span></summary>
+    <summary><span>Responses to 1<span class="suit-h">♥</span> / 1<span class="suit-s">♠</span></span></summary>
     <div class="content">
         
         <div class="subheader-bar">1. THE RAISES (Direct Fit)</div>
