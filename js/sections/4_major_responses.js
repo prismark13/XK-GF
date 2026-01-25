@@ -36,65 +36,57 @@ export const majorResponses = `
             </table>
         </div>
 
-        <div class="subheader-bar">2. OPENER IS WEAK (11-15 HCP)</div>
-        <div class="content" style="padding:10px;">
-            <div style="margin-bottom: 15px; border-left: 4px solid #10b981; padding-left: 15px;">
-                <strong>Scenario: Partner bids 1S or 1NT.</strong><br>
-                Use these to define standard values without forcing to game.
-            </div>
-            <table style="border-collapse: collapse; width: 100%;">
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 12px; font-weight: 700; width: 20%; color: #059669;">2 of New Suit</td>
-                    <td style="padding: 12px;"><strong>Natural & Limited.</strong> (e.g., 1H-1NT-2D). 11-15 HCP.</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 12px; font-weight: 700; color: #059669;">2<span class="suit-c">♣</span> (Gazz)</td>
-                    <td style="padding: 12px;">
-                        <strong>Gazzilli Start.</strong> 11-15 with Clubs or any 16+.<br>
-                        <em>Over 2D relay, <strong>2M</strong> confirms 11-15 HCP.</em>
-                        <div style="margin-top: 5px; padding: 8px; background: #f0fdf4; font-size: 0.9em;">
-                            <strong>GF Checkback:</strong> Responder 2NT asks strength. <br>
-                            &bull; 3C = 11-13 (Min). &bull; 3D/M = 14-15 (Max).
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="subheader-bar">3. OPENER IS INTERMEDIATE (14-16 HCP Misfits)</div>
+        <div class="subheader-bar">2. INTERMEDIATE BUCKETS (14-16 HCP Misfits)</div>
         <div class="table-wrapper">
             <table style="border-collapse: collapse; width: 100%;">
-                <tr style="border-bottom: 2px solid #e2e8f0;">
-                    <td class="col-resp" style="background-color: #fdf2f8; font-weight: 700; color: #9d174d; width: 15%;">2NT</td>
-                    <td style="padding: 14px; width: 25%;"><strong>6-4 Puppet</strong></td>
-                    <td style="padding: 14px;"><strong>14-16 HCP.</strong> 6M-4m shape.<br>Forces 3C to sign-off or correct to 3D.</td>
-                </tr>
+                <tbody>
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #fdf2f8; font-weight: 700; color: #9d174d; width: 15%;">2NT</td>
+                        <td style="padding: 14px; width: 25%;"><strong>6-4 Puppet</strong></td>
+                        <td style="padding: 14px;"><strong>14-16 HCP.</strong> 6M-4m shape. Forces 3C for sign-off or correction to 3D.</td>
+                    </tr>
+                    <tr style="border-bottom: 2px solid #e2e8f0;">
+                        <td class="col-resp" style="background-color: #fdf2f8; font-weight: 700; color: #9d174d;">3NT</td>
+                        <td style="padding: 14px;"><strong>18-19 Balanced</strong></td>
+                        <td style="padding: 14px;">Direct rebid over 1NT. <strong>Systems ON.</strong></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
-        <div class="subheader-bar">4. OPENER IS STRONG (16-19+ HCP)</div>
+        <div class="subheader-bar">3. GAZZILLI ENGINE (The 2<span class="suit-c">♣</span> Rebid)</div>
         <div class="content" style="padding:10px;">
+            <div style="font-weight:700; color:#475569; margin-bottom:10px;">Opener's Reveal (After 2<span class="suit-d">♦</span> 8+ Relay):</div>
             <table style="border-collapse: collapse; width: 100%;">
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 12px; font-weight: 700; width: 20%; color: #b91c1c;">3NT</td>
-                    <td style="padding: 12px;"><strong>18-19 Balanced.</strong> Direct rebid over 1NT. <strong>Systems ON.</strong></td>
+                <tr style="background-color: #f0fdf4; border-bottom: 1px solid #eee;">
+                    <td style="padding: 12px; font-weight: 700; width: 15%;">2M</td>
+                    <td style="padding: 12px;"><strong>Weak Min (11-15).</strong> Natural Clubs (5M-3C+).</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 12px; font-weight: 700; color: #b91c1c;">2<span class="suit-c">♣</span> &rarr; Relay</td>
+                    <td style="padding: 12px; font-weight: 700; color: #b91c1c;">2oM</td>
+                    <td style="padding: 12px;"><strong>Strong (16+).</strong> Shows 4 cards in the other Major.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #eee; background-color: #fff1f2;">
+                    <td style="padding: 12px; font-weight: 700; color: #b91c1c;">2NT</td>
                     <td style="padding: 12px;">
-                        <strong>Gazzilli Power Reveal (17+ HCP).</strong><br>
-                        &bull; <strong>2oM:</strong> 17+ with 4 cards in other major.<br>
-                        &bull; <strong>3m:</strong> 17+ with 5-5 distribution.<br>
-                        &bull; <strong>3M:</strong> 17+ with strong 6+ card suit.
-                        <div style="margin-top: 5px; padding: 8px; background: #fff1f2; font-size: 0.9em; border-left: 3px solid #f87171;">
-                            <strong>Shape Relay:</strong> After 2oM, Resp 2S asks for exact 5422 vs 55 vs 64.
+                        <strong>Strong (16+). Distributional.</strong> <br>
+                        5/5 or 6/4 shape. Responder bids 3C to ask for specific hand:
+                        <div style="margin-top: 5px; font-size: 0.9em; padding-left: 10px;">
+                            &bull; 3D = 5-5 with a minor.<br>
+                            &bull; 3H = 5-5 with Hearts.<br>
+                            &bull; 3S = 6-4 with Clubs.<br>
+                            &bull; 3NT = 6-4 with Diamonds.
                         </div>
                     </td>
                 </tr>
+                <tr style="border-bottom: 1px solid #eee;">
+                    <td style="padding: 12px; font-weight: 700; color: #b91c1c;">3M</td>
+                    <td style="padding: 12px;"><strong>Strong (16+).</strong> Single suited 6+ Major (Maximum).</td>
+                </tr>
             </table>
         </div>
 
-        <div class="subheader-bar">5. RESPONDER IS WEAK (5-7 HCP)</div>
+        <div class="subheader-bar">4. RESPONDER IS WEAK (5-7 HCP)</div>
         <div class="table-wrapper">
             <table style="border-collapse: collapse; width: 100%;">
                 <tr>
@@ -107,6 +99,19 @@ export const majorResponses = `
                     <td style="padding: 14px;"><strong>Minor Escape</strong></td>
                     <td style="padding: 14px;">Puppet to 3C to play in weak Clubs or Diamonds.</td>
                 </tr>
+            </table>
+        </div>
+
+        <div class="subheader-bar">5. PASSED HAND: REVERSE DRURY</div>
+        <div class="table-wrapper">
+            <table style="border-collapse: collapse; width: 100%;">
+                <tbody>
+                    <tr>
+                        <td class="col-resp" style="background-color: #f1f5f9; font-weight: 700; color: #0369a1; padding: 14px; width: 15%;">2C</td>
+                        <td style="padding: 14px; width: 25%;"><strong>Drury</strong></td>
+                        <td style="padding: 14px;"><strong>8+ HCP.</strong> 3+ support. <br>Opener 2D=Sub-min, 2M=Min, >2M=Slam.</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
